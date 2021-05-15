@@ -45,7 +45,7 @@ Instale o Git no seu Mac baixando o Xcode command line tools caso você ainda n�
 
 Em segida configure o git a linha de comando seguinte:
 
-```{bash}
+```{r echo=TRUE, eval=FALSE}
 git --version
 git config
 ```
@@ -56,13 +56,13 @@ Voilá, aceite as configurações e clique em instalar
 
 Digite a seguinte linha de comando caso você tenha Ubuntu ou Debian Linux
 
-```{bash}
+```{r echo=TRUE, eval=FALSE}
 sudo apt-get install git
 ```
 
 Se tem Fedora ou HatLinux use:
 
-```{bash}
+```{r echo=TRUE, eval=FALSE}
 sudo yum install git
 ```
 
@@ -90,7 +90,12 @@ Neste momento já digo, calma, a maior parte das coisas que faremos nesse curso 
 
 ## Conectando o RStudio ao Github
 
-1 - Registre uma conta no [GitHub](https://github.com/join)
+Para fazer isso você precisa ter uma conta criada no GitHub. Tendo sua conta feita, crie um
+repositório, este vai ser o repositório que irá usar ao longo do curso. Ele pode ser uma pasta que contém os documentos (análises, scripts, documentos de texto, dados, figuras etc). Ou pode ser um novo diretório, iniciado do zero, que você decidiu mudar de vida e organizar a partir das maravilhas que o Git pode te oferecer. Qualquer que seja sua opção é interessante que este diretório seja aquele que você vai trabalhar ao longo desse curso.
+
+**PS: Não tenha medo de utilizar um repositório pronto, se coisas derem errado ao longo do curso nada vai apagar o seu repositório local ou quaisquer outros documentos que tenha no seu computador, no máximo, você terá que iniciar todo seu repositório remoto a partir do zero, sem nenhum dano para seu trabalho local**
+
+1 - Copie 
 
 2 - Baixe o [Git](https://git-scm.com/downloads) de acordo com o seu sistema operacional, caso você ainda não tenha baixado
 
