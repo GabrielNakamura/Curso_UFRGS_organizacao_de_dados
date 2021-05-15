@@ -2,7 +2,15 @@
 title: "Introdução ao git - Hello Git"
 author: "Gabriel Nakamura"
 date: "5/15/2021"
-output: html_document
+html_document:
+    toc: true
+    number_sections: true
+    toc_float: 
+      collapsed: true
+      smooth_scroll: true
+    toc_depth: 2
+    theme: default
+    highlight: default
 ---
 
 ```{r setup, include=FALSE}
