@@ -1,0 +1,11 @@
+name: "Curso_UFRGS"
+output_dir: "."
+navbar:
+  title: "Organização de dados biológicos e reprodutibilidade de projetos científicos"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Sobre mim"
+      href: about.html
+    - text: "Introdução"
+      href: Intro_Git.html
