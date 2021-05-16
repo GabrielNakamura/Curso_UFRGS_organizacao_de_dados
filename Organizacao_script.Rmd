@@ -1,0 +1,55 @@
+---
+title: "Organizando os scripts"
+author: "Gabriel Nakamura"
+date: "5/16/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Grande parte de um projeto científico consiste em realizar análises estatísticas, processamento de dados e geração de figuras. Portanto, ter scripts bem organizados e que possibilitam que outras pessoas possam seguir os mesmos passos realizados por você é de extrema importância para a reprodutibilidade.
+
+Neste documento apresentarei funcionalidades do RStudio e alguns pacotes que auxiliam a organização das análises em scripts.
+
+A primeira dica é:
+
+![Hadley Wickham é diretor do RStudio e desenvolvedor de pacotes para processamento de dados.](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Hadley_advice.jpg)
+Outras dicas para que o Hadley não entre na sua casa e queime seu computador:
+
+**NUNCA USE ESSES COMANDOS**
+
+```{r}
+read.table(file.choose())
+
+read.csv(file.choose())
+
+read.csv2(file.choose())
+```
+
+Espero esclarecer os porquês de não utilizar estes comandos após o término dessa leitura.
+
+# Os XXX pecados capitais da organização e reprodutibilidade de dados
+
+1 - **Nunca utilize caminhos absolutos**
+
+Quem nunca se deparou com dificuldades para leitura de dados? Isso é um problema frequente, ainda mais quando estamos começando a nos familiarizar com o R. A primeira dica do que nunca fazer é nunca utilizar caminhos absolutos para leitura de dados. Por que?
+Caminhos na linguagem da computação corresponde ao trajeto que o programa deve fazer para acessar um determinado arquivo. Um caminho absoluto quer dizer que passamos para o programa o caminho completo para acessar o arquivo desejado, ou seja, desde a base do trajeto até o local do arquivo desejado. Por exemplo, o que está no código seguinte:
+
+```{r}
+read.table("/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados") # caminho absoluto para acessar um arquivo deste curso
+```
+
+Por outro lado, um caminho relativo é um atalho. Ao invés de informar todo o caminho como acima, nós informamos para o programa apenas a parte deste caminho que ele desconhece, ignorando todo o resto que é conhecido, e, portanto, não precisa ser indicado. Por exemplo, o mesmo caminho do código anterior pode ser expresso em termos relativos como:
+
+```{r}
+read.table("~/Curso_UFRGS_organizacao_de_dados") # caminho relativo para acessar um arquivo deste curso
+```
+
+## Por que 
+
+# As soluções <- RStudio + here = um script reprodutível
+
+
+

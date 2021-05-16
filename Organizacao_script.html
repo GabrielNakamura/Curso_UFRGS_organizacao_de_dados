@@ -9,9 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="Gabriel Nakamura" />
 
 
-<title>Organização de dados e reprodutibilidade de projetos científicos</title>
+<title>Organizando os scripts</title>
 
 <script src="site_libs/header-attrs-2.8/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -268,52 +269,24 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Organização de dados e reprodutibilidade de projetos científicos</h1>
+<h1 class="title toc-ignore">Organizando os scripts</h1>
+<h4 class="author">Gabriel Nakamura</h4>
+<h4 class="date">5/16/2021</h4>
 
 </div>
 
 
-<p>Este repositório contém os materiais necessários para acompanhar o curso de <strong>Organização de dados biológicos e reprodutibilidade de projetos científicos</strong>, ministrado para o PPG Ecologia da Universidade Federal do Rio Grande do Sul. Ele vai servir como um material de apoio as aulas que serão ministradas neste curso.</p>
-<p>A seguir o cronograma detalhado do curso:</p>
-<table>
-<colgroup>
-<col width="6%" />
-<col width="20%" />
-<col width="35%" />
-<col width="30%" />
-<col width="4%" />
-<col width="3%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">turno/dia</th>
-<th align="center">24/05</th>
-<th align="center">25/05</th>
-<th align="center">26/05</th>
-<th align="left">27/05</th>
-<th align="left">28/05</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">manha</td>
-<td align="center"><a href="https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Intro_git.html">Fundamentos basicos</a></td>
-<td align="center"><a href="https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Organizacao_dir_local.html">Organizando o diretorio</a></td>
-<td align="center">comandos basicos do GitHub</td>
-<td align="left">Documentando resultados</td>
-<td align="left">Duvidas</td>
-</tr>
-<tr class="even">
-<td align="left">tarde</td>
-<td align="center">As ferramentas</td>
-<td align="center"><a href="Curso_UFRGS_organizacao_de_dados/Organizacao_script.html">Organizando os scripts</a></td>
-<td align="center">Pratico - mais GitHub</td>
-<td align="left">Trabalho colaborativo</td>
-<td align="left">Duvidas</td>
-</tr>
-</tbody>
-</table>
-<p>Para acessar o material de acompanhamento referente a cada aula é só clicar em cima das aulas no cronograma.</p>
+<p>Grande parte de um projeto científico consiste em realizar análises estatísticas, processamento de dados e geração de figuras. Portanto, ter scripts bem organizados e que possibilitam que outras pessoas possam seguir os mesmos passos realizados por você é de extrema importância para a reprodutibilidade.</p>
+<p>Neste documento apresentarei funcionalidades do RStudio e alguns pacotes que auxiliam a organização das análises em scripts.</p>
+<p>A primeira dica é:</p>
+<div class="figure">
+<img src="Hadley_advice.jpg" alt="" />
+<p class="caption">Hadley Wickham é diretor do RStudio e desenvolvedor de pacotes para processamento de dados.</p>
+</div>
+<p>Espero ficar claro após o término dessa leitura.</p>
+<div id="rstudio-here-um-script-reprodutível" class="section level1">
+<h1>RStudio + here = um script reprodutível</h1>
+</div>
 
 
 

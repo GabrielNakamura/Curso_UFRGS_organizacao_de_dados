@@ -2,6 +2,21 @@
 title: "Organização de dados e reprodutibilidade de projetos científicos"
 ---
 
-Este repositório é dedicado a depositar os materiais necessário para acompanhar o curso de Organização
-de dados biológicos e reprodutibilidade de projetos científicos, ministrado para o 
-PPG Ecologia da Universidade Federal do Rio Grande do Sul
+Este repositório contém os materiais necessários para acompanhar o curso de **Organização
+de dados biológicos e reprodutibilidade de projetos científicos**, ministrado para o 
+PPG Ecologia da Universidade Federal do Rio Grande do Sul.
+Ele vai servir como um material de apoio as aulas que serão ministradas neste curso.
+
+A seguir o cronograma detalhado do curso:
+
+
+| turno/dia| 24/05                             | 25/05                                      | 26/05                      | 27/05 | 28/05 |            
+| :------- | :----------------------:| :----------------------------------------: | :----------------------------------: | :---- | :---  |
+| manha    | [Fundamentos basicos](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Intro_git.html)     | [Organizando o diretorio](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Organizacao_dir_local.html)  | comandos basicos do GitHub | Documentando resultados | Duvidas | Discussao geral |
+| tarde    | As ferramentas | [Organizando os scripts](Curso_UFRGS_organizacao_de_dados/Organizacao_script.html)   | Pratico - mais GitHub                | Trabalho colaborativo  | Duvidas | Discussao geral |
+
+
+Para acessar o material de acompanhamento referente a cada aula é só clicar em cima das aulas no cronograma.
+
+
+

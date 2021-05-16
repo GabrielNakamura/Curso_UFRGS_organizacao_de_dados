@@ -5,7 +5,11 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "Sobre mim"
+    - text: "Sobre mim e a razão deste curso"
       href: about.html
-    - text: "Introdução"
+    - text: "Introdução - instalando e configurando o Git"
       href: Intro_Git.html
+    - text: "Organizando o diretório"
+      href: Organizacao_dir_local.html
+    - text: "Organizando os scripts"
+      href: Organizacao_script.html

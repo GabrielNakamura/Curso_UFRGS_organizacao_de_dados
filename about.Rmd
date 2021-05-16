@@ -2,4 +2,10 @@
 title: "Organização de dados biológicos"
 ---
 
-Site para o curso 
+Olá, este é o repositório com o material de apoio para o curso ministrado por mim, [Gabriel Nakamura](https://dimensionsofbiodiversity.weebly.com/), no PPG Ecologia da Universidade Federal do Rio Grande do Sul, onde atualmente sou pós-doc no [Laboratório de Ecologia Filogenética e Funcional](https://www.ufrgs.br/leff/). Trabalho com ecologia teórica, mais especificamente no desenvolvimento de métodos quantitativos nas áreas de ecologia de comunidades e macroevolução. Resolvi oferecer este curso por dois motivos, o primeiro por me lembrar o quão difícil era (e ainda é) organizar conjuntos de dados, análises, documentos e figuras em meu computador, de uma forma que, ao passar uma semana sem olhar para aquela pasta, eu não gastasse uma semana inteira tentando desvendar o que cada arquivo quer dizer. O segundo, para tentar ajudar com que os estudantes/pesquisadores não sintam a mesma aflição que descrita anteriormente. A terceira (eram duas mas me lembrei de mais uma), para que eu apreenda mais nesse processo de ensinar, pois ensinar também é aprender.
+
+Quase todo o material que está nesse sítio foi inspirado em outros materiais que tratam desses temas de uma maneira muito mais aprofundado. O que tentei fazer aqui é reunir pontos que considero básico para um curso de organização de dados e reprodutibilidade, de tal forma que quem use esse material consiga realizar os procedimentos básicos sem que o "pain" seja maior que o "gain". Aqueles que buscam se aprofundar nesse tópico devem buscar cada uma das referências que cito neste sítio eletrônico.
+
+Por fim, espero que esse material ajude a nos lembrar que de o fundamento básico da ciência é sua capacidade de reprodução, e isso sirva de estímulo para que tornemos nossas pesquisas cada vez mais reprodutíveis.
+
+Gabriel Nakamura, Outono 2021
