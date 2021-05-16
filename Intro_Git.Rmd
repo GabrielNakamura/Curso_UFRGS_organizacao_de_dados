@@ -113,11 +113,22 @@ repositório, este vai ser o repositório que irá usar ao longo do curso. Ele p
 
 Este glossário visa listar as palavras comumente usadas na linguagem de controle de versão, atribuindo a elas seus respectivos significados em uma linguagem acessível para nós, ecólogos/zoólogos/botânicos que visam se aventurar no mundo do controle de versões que o Git, mais especificamente o GitHub, nos oferece
 
--   **directory** = pasta
--   **commit** = aposto que você já adicionou alguma vez na sua vida a uma versão de seu arquivo a data ou algo do tipo "arquivo\_V3\_final". Se sim, você já fez um commit
--   **pull** = baixar dados para (geralmente seu computador)
--   **push** = subir dados para (geralmente para um servidor remoto a.k.a nuvem)
--   **main** ou **master** = pasta remota
--   **repository** ou **reppo** = diretório remoto
+-  **directory** = pasta
+-  **commit** = aposto que você já adicionou alguma vez na sua vida a uma versão de seu arquivo a data ou algo do tipo "arquivo\_V3\_final". Se sim, você já fez um commit
+-  **pull** = baixar dados para (geralmente seu computador)
+-  **push** = subir dados para (geralmente para um servidor remoto a.k.a nuvem)
+-  **main** ou **master** = pasta remota
+-  **repository** ou **reppo** = diretório remoto
+-  **watch** = monitorar o repositório e cada mudança feita nele
+-  **master** = repositório remoto principal
+-  **branch** = repositório remoto, pode ser o principal ou repositórios adicionais
+-  **merge** = mesclar dois arquivos
+-  **diff** = observer a diferença entre dois arquivos
 
 # Referências básicas
+
+- [Happy Git with R - Jenny Bryan](https://happygitwithr.com/)
+- [Git and GitHub for advanced ecological data analysis](https://afredston.github.io/learn-git/learn-git.html?s=03)
+- [Perkel, Jeffrey. Democratic databases: Science on GitHub. 2016. Nature](https://www.nature.com/news/democratic-databases-science-on-github-1.20719)
+- [Lista](https://ohshitgit.com/) sobre o que fazer quando coisas dão errada no Git
+- [Tornando o código citável](https://guides.github.com/activities/citable-code/)

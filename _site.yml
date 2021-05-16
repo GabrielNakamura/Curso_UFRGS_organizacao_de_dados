@@ -5,7 +5,7 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "Sobre mim e a razão deste curso"
+    - text: "Motivação para este curso"
       href: about.html
     - text: "Introdução - instalando e configurando o Git"
       href: Intro_Git.html
