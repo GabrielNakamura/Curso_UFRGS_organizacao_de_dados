@@ -246,7 +246,7 @@ $(document).ready(function () {
   <a href="index.html">Home</a>
 </li>
 <li>
-  <a href="about.html">Sobre mim e a razão deste curso</a>
+  <a href="about.html">Motivação para este curso</a>
 </li>
 <li>
   <a href="Intro_Git.html">Introdução - instalando e configurando o Git</a>
@@ -279,13 +279,54 @@ $(document).ready(function () {
 <p>Grande parte de um projeto científico consiste em realizar análises estatísticas, processamento de dados e geração de figuras. Portanto, ter scripts bem organizados e que possibilitam que outras pessoas possam seguir os mesmos passos realizados por você é de extrema importância para a reprodutibilidade.</p>
 <p>Neste documento apresentarei funcionalidades do RStudio e alguns pacotes que auxiliam a organização das análises em scripts.</p>
 <p>A primeira dica é:</p>
-<div class="figure">
-<img src="Hadley_advice.jpg" alt="" />
-<p class="caption">Hadley Wickham é diretor do RStudio e desenvolvedor de pacotes para processamento de dados.</p>
+<p><img src="Hadley_advice.jpg" alt="Hadley Wickham é diretor do RStudio e desenvolvedor de pacotes para processamento de dados." /> Outras dicas para que o Hadley não entre na sua casa e queime seu computador:</p>
+<p><strong>NUNCA USE ESSES COMANDOS</strong></p>
+<pre class="r"><code>read.table(file.choose())
+
+read.csv(file.choose())
+
+read.csv2(file.choose())</code></pre>
+<p>Espero esclarecer os porquês de não utilizar estes comandos após o término dessa leitura.</p>
+<div id="os-xxx-pecados-capitais-da-organização-e-reprodutibilidade-de-dados" class="section level1">
+<h1>Os XXX pecados capitais da organização e reprodutibilidade de dados</h1>
+<p>1 - <strong>Nunca utilize caminhos absolutos</strong></p>
+<p>Quem nunca se deparou com dificuldades para leitura de dados? Isso é um problema frequente, ainda mais quando estamos começando a nos familiarizar com o R. A primeira dica do que nunca fazer é nunca utilizar caminhos absolutos para leitura de dados. Por que? Caminhos na linguagem da computação corresponde ao trajeto que o programa deve fazer para acessar um determinado arquivo. Um caminho absoluto quer dizer que passamos para o programa o caminho completo para acessar o arquivo desejado, ou seja, desde a base do trajeto até o local do arquivo desejado. Por exemplo, o que está no código seguinte:</p>
+<pre class="r"><code>read.table(&quot;/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados&quot;) # caminho absoluto para acessar um arquivo deste curso</code></pre>
+<p>Por outro lado, um caminho relativo é um atalho. Ao invés de informar todo o caminho como acima, nós informamos para o programa apenas a parte deste caminho que ele desconhece, ignorando todo o resto que é conhecido, e, portanto, não precisa ser indicado. Por exemplo, o mesmo caminho do código anterior pode ser expresso em termos relativos como:</p>
+<pre class="r"><code>read.table(&quot;~/Curso_UFRGS_organizacao_de_dados&quot;) # caminho relativo para acessar um arquivo deste curso</code></pre>
+<div id="por-que-utilizar-o-caminho-relativo" class="section level2">
+<h2>Por que utilizar o caminho relativo</h2>
+<p>Para responder essa questão basta pegar um código escrito por outra pessoa que usa caminhos relativos em seus scripts e tentar rodar na sua máquina. O que vai acontecer? Uma mensagem de erro.</p>
+<p>Isso acontece pois o caminho absoluto na sua máquina não é o mesmo caminho absoluto da minha, ou de qualquer outra pessoa, a não ser por uma coincidência absurdamente improvável. Logo, a solução para esse problema é a utilização do caminho relativo. E como fazemos isso está no próximo tópico.</p>
 </div>
-<p>Espero ficar claro após o término dessa leitura.</p>
-<div id="rstudio-here-um-script-reprodutível" class="section level1">
-<h1>RStudio + here = um script reprodutível</h1>
+</div>
+<div id="as-soluções---rproject-here-um-script-reprodutível" class="section level1">
+<h1>As soluções &lt;- Rproject + here = um script reprodutível</h1>
+<p>Caminhos relativos para os arquivos podem ser obtidos a partir do uso do RStudio, mas especificamente utilizando uma ferramenta do RStudio cahamado Rproject. A mágica do Rproject é transformar todo caminho em relativo, em termos mais simples, ele pega o caminho absoluto e transforma num atalho. Na prático, tudo o que precisa ser informado para leitura de qualquer arquivo agora é o caminho a partir do local onde o Rproject se encontra. Por exemplo, vamos ler o arquivo <code>dados_test</code> que pode ser obtido baixando o repositório <strong>GabrielNakamura/MS_FishPhyloMaker</strong> através do código:</p>
+<pre class="r"><code>download.file(url = &quot;https://github.com/GabrielNakamura/MS_FishPhyloMaker/archive/master.zip&quot;, destfile = &quot;MS_FishPhyloMaker.zip&quot;) # para baixar
+
+unzip(zipfile = &quot;MS_FishPhyloMaker.zip&quot;) # para unzipar</code></pre>
+<p>A pasta vai ser baixada e unzipada para o seu atual diretório, não se preocupe com isso nesse moemento, o exercício serve apenas para mostrar como utilizar caminhos relativos para leitura de dados para dentro do R.</p>
+<p>Temos três opçoes:</p>
+<ul>
+<li>Opção 1: Errado</li>
+</ul>
+<pre class="r"><code>setwd(&quot;~/OneDrive/Manuscritos/MS_FishPhyloMaker_&quot;) # primeiro especificando o diretório
+raw_data &lt;- read.csv(&quot;~/data/osm-raw-data.csv&quot;, sep=&quot;;&quot;) # agora lendo os dados</code></pre>
+<p>Isso é uma opção, mas lembre-se que <a href="%22https://github.com/GabrielNakamura/Curso_UFRGS_organizacao_de_dados/blob/master/Hadley_advice.jpg%22">Jenny Bryan irá entrar no seu escritório e queimar seu computador</a>. Logo, não parece uma opção.</p>
+<ul>
+<li>Opção 2: Errado</li>
+</ul>
+<p>Não queremos que ninguém queime nosso computador, então podemos tirar o <code>set_wd</code> e utilizar o caminho absoluto</p>
+<pre class="r"><code>raw_data &lt;- read.csv(&quot;/Users/gabrielnakamura/OneDrive/Manuscritos/MS_FishPhyloMaker_/data&quot;, sep=&quot;;&quot;)</code></pre>
+<p>Isso funcionaria, mas apenas no meu computador. Logo, falhamos na reprodutibilidade</p>
+<ul>
+<li><strong>Opção 3</strong>: Correto</li>
+</ul>
+<pre class="r"><code>raw_data &lt;- read.csv(here::here(&quot;data&quot;, &quot;osm-raw-data.csv&quot;), sep=&quot;;&quot;)</code></pre>
+<p>Todos conseguiram ler? Se sim, conseguimos atingir o primeiro passo para um trabalho reprodutível: <strong>Todos conseguem ler os dados, independente do computador que estivermos</strong></p>
+<p>Para conseguir a reprodutibilidade utilizamos duas ferramentas, o Rproject, que possibilitou a utilização do caminho relativo, por isso informamos apenas que o arquivo “osm-raw-data.csv” está na pasta “data”, pois o diretório raiz agora é aquele em que o projeto está hospedado.</p>
+<p>A segunda ferramenta que utilizamos foi o pacote <a href="https://cran.r-project.org/web/packages/here/index.html">{<code>here</code>}</a>. A importância do pacote, além de simplificar a sintaxe pois precisamos apenas digitar o nome do arquivo e da pasta onde ele se encontra, está no fato de não precisamos ficar ajustando separadores de pastas de acordo com o sistema operacional. Enquanto no sistema OS se utiliza “/”, em Windows se utiliza “//”, com o here não há necessidade de preocupação com a troca do caracter.</p>
 </div>
 
 

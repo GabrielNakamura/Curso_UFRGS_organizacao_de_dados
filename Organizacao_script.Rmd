@@ -20,7 +20,7 @@ Outras dicas para que o Hadley não entre na sua casa e queime seu computador:
 
 **NUNCA USE ESSES COMANDOS**
 
-```{r}
+```{r echo=TRUE, eval=FALSE}
 read.table(file.choose())
 
 read.csv(file.choose())
@@ -37,13 +37,13 @@ Espero esclarecer os porquês de não utilizar estes comandos após o término d
 Quem nunca se deparou com dificuldades para leitura de dados? Isso é um problema frequente, ainda mais quando estamos começando a nos familiarizar com o R. A primeira dica do que nunca fazer é nunca utilizar caminhos absolutos para leitura de dados. Por que?
 Caminhos na linguagem da computação corresponde ao trajeto que o programa deve fazer para acessar um determinado arquivo. Um caminho absoluto quer dizer que passamos para o programa o caminho completo para acessar o arquivo desejado, ou seja, desde a base do trajeto até o local do arquivo desejado. Por exemplo, o que está no código seguinte:
 
-```{r}
+```{r echo=TRUE, eval=FALSE}
 read.table("/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados") # caminho absoluto para acessar um arquivo deste curso
 ```
 
 Por outro lado, um caminho relativo é um atalho. Ao invés de informar todo o caminho como acima, nós informamos para o programa apenas a parte deste caminho que ele desconhece, ignorando todo o resto que é conhecido, e, portanto, não precisa ser indicado. Por exemplo, o mesmo caminho do código anterior pode ser expresso em termos relativos como:
 
-```{r}
+```{r echo=TRUE, eval=FALSE}
 read.table("~/Curso_UFRGS_organizacao_de_dados") # caminho relativo para acessar um arquivo deste curso
 ```
 
@@ -57,7 +57,7 @@ Isso acontece pois o caminho absoluto na sua máquina não é o mesmo caminho ab
 
 Caminhos relativos para os arquivos podem ser obtidos a partir do uso do RStudio, mas especificamente utilizando uma ferramenta do RStudio cahamado Rproject. A mágica do Rproject é transformar todo caminho em relativo, em termos mais simples, ele pega o caminho absoluto e transforma num atalho. Na prático, tudo o que precisa ser informado para leitura de qualquer arquivo agora é o caminho a partir do local onde o Rproject se encontra. Por exemplo, vamos ler o arquivo `dados_test` que pode ser obtido baixando o repositório **GabrielNakamura/MS_FishPhyloMaker** através do código:
 
-```{r}
+```{r echo=TRUE, eval=FALSE}
 download.file(url = "https://github.com/GabrielNakamura/MS_FishPhyloMaker/archive/master.zip", destfile = "MS_FishPhyloMaker.zip") # para baixar
 
 unzip(zipfile = "MS_FishPhyloMaker.zip") # para unzipar
@@ -70,7 +70,7 @@ Temos três opçoes:
 
 - Opção 1: Errado
 
-```{r}
+```{r echo=TRUE, eval=FALSE}
 setwd("~/OneDrive/Manuscritos/MS_FishPhyloMaker_") # primeiro especificando o diretório
 raw_data <- read.csv("~/data/osm-raw-data.csv", sep=";") # agora lendo os dados
 ```
@@ -80,7 +80,7 @@ Isso é uma opção, mas lembre-se que [Jenny Bryan irá entrar no seu escritór
 - Opção 2: Errado
 
 Não queremos que ninguém queime nosso computador, então podemos tirar o `set_wd` e utilizar o caminho absoluto
-```{r}
+```{r echo=TRUE, eval=FALSE}
 raw_data <- read.csv("/Users/gabrielnakamura/OneDrive/Manuscritos/MS_FishPhyloMaker_/data", sep=";")
 ```
 
@@ -88,7 +88,7 @@ Isso funcionaria, mas apenas no meu computador. Logo, falhamos na reprodutibilid
 
 - **Opção 3**: Correto
 
-```{r}
+```{r echo=TRUE, eval=FALSE}
 raw_data <- read.csv(here::here("data", "osm-raw-data.csv"), sep=";")
 ```
 
