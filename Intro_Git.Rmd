@@ -117,7 +117,7 @@ repositório, este vai ser o repositório que irá usar ao longo do curso. Ele p
 Este glossário visa listar as palavras comumente usadas na linguagem de controle de versão, atribuindo a elas seus respectivos significados em uma linguagem acessível para nós, ecólogos/zoólogos/botânicos que visam se aventurar no mundo do controle de versões que o Git, mais especificamente o GitHub, nos oferece
 
 -  **directory** = pasta
--  **commit** = aposto que você já adicionou alguma vez na sua vida a uma versão de seu arquivo a data ou algo do tipo "arquivo\_V3\_final". Se sim, você já fez um commit
+-  **commit** = aposto que você já adicionou alguma vez na sua vida a uma versão de seu arquivo a data ou algo do tipo "arquivo_V3_final". Se sim, você já fez um commit. Fazer um commit é a mesma coisa que comentar as mudanças que foram feitas e adicioná-las ao seu novo arquivo
 -  **pull** = baixar dados para (geralmente seu computador)
 -  **push** = subir dados para (geralmente para um servidor remoto a.k.a nuvem)
 -  **main** ou **master** = pasta remota
@@ -127,6 +127,7 @@ Este glossário visa listar as palavras comumente usadas na linguagem de control
 -  **branch** = repositório remoto, pode ser o principal ou repositórios adicionais
 -  **merge** = mesclar dois arquivos
 -  **diff** = observer a diferença entre dois arquivos
+-  **stage e unstaged** = significa selecionar (stage) ou não (unstaged) um arquivo especifico para um commit
 
 # Referências básicas
 
