@@ -1,0 +1,23 @@
+---
+title: 'Organização de dados: uma questão pessoal?'
+author: "Gabriel Nakamura"
+date: "5/17/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Imagine a seguinte situação... O ano é 2020, um vírus potencialmente perigoso e desconhecido até então pela ciência aparece em algum canto do mundo. Ninguém sabe exatamente do que se trata, mas descofiam que deva ser uma mutação de vírus anteriormente conhecidos e estudados por muitas pessoas. Você é uma pesquisadora que foi designada pela agência de pesquisa do seu governo para descobrir do que se trata. Você busca as possíveis fontes de informação que podem estar relacionadas a esse vírus, e para isso você precisa ir a fundo, ou seja, olhar arquivos de dados, figuras, informações que vão além do que está reportado na literatura científica conhecida, afinal de contas, o vírus é novo. Ao encontrar as bases de dados que geraram o conhecimento atual você se depara com algo desse tipo:
+
+![Um diretório organizado seguindo a lógica: *organização, uma questão pessoal*.](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/directory_trash.jpg)
+
+O vírus é perigoso, e todo tempo para desvendar os pormenores da doença que ele causa é precioso, mas infelizmente grande parte do tempo vai ser gasto para primeiro entender o que se tem de conhecimento sobre, e só então a pesquisadora poderá começar a se aventurar no desconhecido.
+
+Infelizmente sabemos que isso é uma história triste, e ela não está aqui apenas como uma ilustração macabra da importância de se ter dados organizados. Ela serve para mostrar o quão danoso pode ser, guardando as devidas proporções, a falta de uma organização coerente de dados em nossos diretórios locais. Isso pode valer para aquela espécie que corre risco de extinção, para poder expandir aquele conhecimento teórico além do que se sabe, ou simplesmente para garantir que cumpramos com a base elementar do processo científico: A **reprodutibilidade**.
+
+A reprodutibilidade científica é o sistema que garante a elevada confiabilidade do processo de investigação científica. Sem ela nos tornamos reféns de opniões, crenças e viéses que nós, como pessoas, estamos todos sujeitos.
+
+O processo de revisão por pares é um filtro muito importante para assegurar o rigor científico, porém, não se trata da panaceia aos problemas que podem acontecer durante o processo de investigação científica. Para aqueles que quiserem mais motivos sugiro ler sobre um caso atual de [suspeita de fraude científica na área de ecologia e evolução](https://en.wikipedia.org/wiki/Jonathan_Pruitt). Para tentar reduzir este tipo de erro (deliberado ou não) devemos garantir que nossos dados sejam acessíveis (o que inclui organizados) e reprodutiveis. Conseguimos acessar com facilidade os dados daquele artigo para entendermos a fundo o que foi feito? Conseguios reproduzir aquela análise publicada de modo que consigamos expandir a proposta? Conseguimos reproduzir todos os passos de nossos próprios projetos após finalizado? Estas são algumas perguntas que podemos nos fazer para garantir a organização e a reprodutibilidade de nossas pesquisas.
+

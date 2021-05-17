@@ -30,7 +30,7 @@ read.csv2(file.choose())
 
 Espero esclarecer os porquês de não utilizar estes comandos após o término dessa leitura.
 
-# Os XXX pecados capitais da organização e reprodutibilidade de dados
+# Os pecados capitais da organização e reprodutibilidade de dados
 
 1 - **Nunca utilize caminhos absolutos**
 

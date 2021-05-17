@@ -249,6 +249,9 @@ $(document).ready(function () {
   <a href="about.html">Motivação para este curso</a>
 </li>
 <li>
+  <a href="Intro_teorico.html">Introdução - Organização: questão de estilo?</a>
+</li>
+<li>
   <a href="Intro_Git.html">Introdução - instalando e configurando o Git</a>
 </li>
 <li>
@@ -287,8 +290,8 @@ read.csv(file.choose())
 
 read.csv2(file.choose())</code></pre>
 <p>Espero esclarecer os porquês de não utilizar estes comandos após o término dessa leitura.</p>
-<div id="os-xxx-pecados-capitais-da-organização-e-reprodutibilidade-de-dados" class="section level1">
-<h1>Os XXX pecados capitais da organização e reprodutibilidade de dados</h1>
+<div id="os-pecados-capitais-da-organização-e-reprodutibilidade-de-dados" class="section level1">
+<h1>Os pecados capitais da organização e reprodutibilidade de dados</h1>
 <p>1 - <strong>Nunca utilize caminhos absolutos</strong></p>
 <p>Quem nunca se deparou com dificuldades para leitura de dados? Isso é um problema frequente, ainda mais quando estamos começando a nos familiarizar com o R. A primeira dica do que nunca fazer é nunca utilizar caminhos absolutos para leitura de dados. Por que? Caminhos na linguagem da computação corresponde ao trajeto que o programa deve fazer para acessar um determinado arquivo. Um caminho absoluto quer dizer que passamos para o programa o caminho completo para acessar o arquivo desejado, ou seja, desde a base do trajeto até o local do arquivo desejado. Por exemplo, o que está no código seguinte:</p>
 <pre class="r"><code>read.table(&quot;/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados&quot;) # caminho absoluto para acessar um arquivo deste curso</code></pre>

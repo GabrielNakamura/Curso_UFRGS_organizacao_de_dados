@@ -11,59 +11,34 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Organização - questão de estilo?
 
-"Eu me acho na minha bagunça", quem nunca ouviu essa frase, ou já falou
-essa frase? Provavelmente todos nós, com excessão daquelas pessoas bem
-organizadas. Mas **organizado**, não seria uma questão pessoal? Podemos
-discutir isso durante horas a fio se estivermos falando do seu quarto,
-da sua estante ou do seu guarda-roupa, mas quando falamos de ciência, ou
-seja, uma atividade coletiva, organização não é uma questão pessoal,
-justamente por ser coletiva. Sempre trabalhamos em conjunto, e isso pode
-ser com um grupo composto por muitas pessoas que trabalham em um
-determinado projeto, ou pode ser consigo mesmo, o seu eu do futuro.
-Desta maneira, é necessário que tudo que foi utilizado para o
-desenvolvimento do seu projeto científico seja de fácil compreensão para
-seus colaboradores ou para o seu "eu" do futuro. Imagine a seguinte
-situação... O ano é 2020, um vírus potencialmente perigoso e
-desconhecido até então pela ciência aparece em algum canto do mundo.
-Ninguém sabe exatamente do que se trata, mas descofiam que deva ser uma
-mutação de vírus anteriormente conhecidos e estudados por muitas
-pessoas. Você é uma pesquisadora que foi designada pela agência de
-pesquisa do seu governo para descobrir do que se trata. Você busca as
-possíveis fontes de informação que podem estar relacionadas com esse
-vírus, e para isso você precisa ir a fundo, ou seja, olhar arquivos de
-dados, figuras, informações que vão além do que está reportado na
-literatura científica conhecida, afinal de contas, o vírus é novo. Ao
-encontrar as bases de dados que geraram o conhecimento atual sobre os
-vírus você se depara com arquivos orgaizados desta maneira:
+"Eu me acho na minha bagunça", quem nunca ouviu essa frase, ou já pronunciou? Provavelmente todos nós. Mas o conceito de **organização**, seria mesmo uma questão pessoal? Podemos discutir isso durante horas a fio se estivermos falando do seu quarto, da sua estante ou do seu guarda-roupa, mas quando falamos de ciência, ou seja, uma atividade coletiva, organização **não** é uma questão pessoal, justamente por ser coletiva. Sempre trabalhamos em conjunto, e isso pode ser com um grupo composto por muitas pessoas que trabalham em um determinado projeto, ou pode ser consigo mesmo, o seu eu do futuro. Desta maneira, é necessário que tudo que foi utilizado para o desenvolvimento do seu projeto científico seja de fácil compreensão para seus colaboradores ou para o seu "eu" do futuro. 
 
-![Um diretório organizado seguindo a lógica *organização, uma questão pessoal*.](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/directory_trash.jpg)
-
-O vírus é perigoso, e todo tempo para desvendar os pormenores da doença que ele causa é precioso, mas infelizmente grande parte do tempo
-    vai ser gasto para primeiro entender o que se tem de conhecimento sobre, e só então a pesquisadora poderá começar a se aventurar no      desconhecido.
-    
-Infelizmente sabemos que isso é uma história triste, e ela não está aqui apenas como uma ilustração macabra da importância de se ter dados organizados. Ela serve para mostrar o quão danoso pode ser, guardando as suas devidas proporções, a falta de uma organização coerente de dados 
-    em nossos diretórios locais. Isso pode valer para aquela espécie que corre risco de extinção, para poder expandir aquele framework teórico além do que se sabe, ou simplesmente para garantir a base mais forte do processo científico, que é a **reprodutibilidade**.
-    
-    
 # Um esquema geral (mas não absoluto) para organização do diretório local
 
 Nessa seção irei mostrar uma proposta de esquema geral para organização de diretórios. Essa estrutura é baseada nesta proposta do [Gustavo Paterno](https://docs.google.com/presentation/d/1Px9Npa_ANqmmfjCXo9A-eBmWzgUmmkCKd7fBIq_gG6k/edit#slide=id.g62fc6bf72f_0_196).
 
 Digo que não é absoluto pois modificações nesse esquema podem ser feita para ajustar ao conjunto de dados de cada pessoa. A Ecologia é um campo muito amplo de pesquisa, e nem todos os dados se ajustarão perfeitamente a esta proposta. O mais importante de tudo é que os dados estejam organizados de uma maneira **intuitiva** e **consistente** no diretório, como o na figura seguinte.
 
-
 ![Um diretório organizado.](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/directory_org.jpg)
 
+Mas, qual a lógica por trás dessa organização desse diretório? Seguimos a proposta presente na figura seguinte, inspirada pelo original presente  [aqui](https://docs.google.com/presentation/d/1Px9Npa_ANqmmfjCXo9A-eBmWzgUmmkCKd7fBIq_gG6k/edit#slide=id.g62fc6bf72f_0_7). 
 
-Mas, qual a lógica por trás dessa organização desse diretório? Seguimos a seguinte proposta:
+Nesta proposta os arquivos dentro de um projeto são organizados em 4 pastas que contemplam quase todos os documentos que geramos ou que precisamos quando estamos desenvolvendo um projeto científico.
 
+![Um template básico para um diretório bem organizado.](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/template_general.jpg)
 
+## Nomeando arquivos no diretório 
 
-# O README 
+[Principal referência](http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf)
+
+# O README
 
 O README é uma das partes mais importantes do seu diretório, ele é escrito em caixa alta justamente para que a pessoa que esteja acesssando o seu diretório ouça a sua voz gritando **Me leia por favor!!**.
 
 Neste arquivo de texto você irá encontrar as principais instruções sobre a estrutura do diretório, incluindo os nomes das pessoas que montaram o diretório, além de instruções básicas sobre o que contém em cada pasta.
 
 # Os metadados
+
+Os metadados consistem em explicações sobre a estrutura de dados. Por exemplo, o significado dos códigos ou abreviações presentes em uma data tabela, do que se trata a informação presente nas linhas e nas colunas, o que uma dada função faz. Reportar precisamente o que cada arquivo contém é de extrema importância para garantir com que outras pessoas, ou mesmo o você do futuro saiba o que foi/está sendo feito no projeto científico.
+
 
