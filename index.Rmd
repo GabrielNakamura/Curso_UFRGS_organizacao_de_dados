@@ -2,21 +2,26 @@
 title: "Organização de dados e reprodutibilidade de projetos científicos"
 ---
 
-Este repositório contém os materiais necessários para acompanhar o curso de **Organização
-de dados biológicos e reprodutibilidade de projetos científicos**, ministrado para o 
-PPG Ecologia da Universidade Federal do Rio Grande do Sul.
-Ele vai servir como um material de apoio as aulas que serão ministradas neste curso.
+Olá, tudo bem? Espero que sim, apesar do momento difícil. Se você está acessando esse site é porque se interessou pela disciplina de **Organização de dados biológicos e reprodutibilidade de projetos científicos**, então, em primeiro lugar, muito obrigado pelo interesse.
+
+Este site contém os materiais necessários para acompanhar o curso , que será ministrado no 
+PPG Ecologia da Universidade Federal do Rio Grande do Sul entre os dias 24 - 28/5/2021.
+Ele vai servir como um material de apoio as aulas que serão realizadas remotamente.
+
+**O [link]() para as aulas será disponibilizado um dia antes, para que vocês possam acessar a sala virtual.**
 
 A seguir o cronograma detalhado do curso:
 
 
 | turno/dia| 24/05                             | 25/05                                      | 26/05                      | 27/05 | 28/05 |            
 | :------- | :----------------------:| :----------------------------------------: | :----------------------------------: | :---- | :---  |
-| manha    | [Fundamentos basicos](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Intro_Git.html)     | [Organizando o diretorio](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Organizacao_dir_local.html)  | comandos basicos do GitHub | Documentando resultados | Duvidas | Discussao geral |
-| tarde    | As ferramentas | [Organizando os scripts](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Organizacao_script.html)   | Pratico - mais GitHub                | Trabalho colaborativo  | Duvidas | Discussao geral |
+| manha (9h-12h)    | [Fundamentos basicos](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Intro_Git.html)     | [Organizando o diretorio](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Organizacao_dir_local.html)  | comandos basicos do GitHub | Documentando resultados | Duvidas | Discussao geral |
+| tarde (14h - 17h)   | [As ferramentas](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Intro_Git.html) | [Organizando os scripts](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Organizacao_script.html)   | Pratico - mais GitHub                | Trabalho colaborativo  | Dúvidas | Discussao geral |
 
 
-Para acessar o material de acompanhamento referente a cada aula é só clicar em cima das aulas no cronograma.
+Para acessar o material de acompanhamento referente a cada aula é só clicar em cima dos tópicos presentes no cronograma. Sugiro que acessem o material de apoio antes das aulas para facilitar o acompanhamento do conteúdo.
+
+Gabriel Nakamura
 
 
 
