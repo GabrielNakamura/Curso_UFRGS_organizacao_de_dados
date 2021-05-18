@@ -6,7 +6,7 @@ Olá, tudo bem? Espero que sim, apesar do momento difícil. Se você está acess
 
 Este site contém os materiais necessários para acompanhar o curso , que será ministrado no 
 PPG Ecologia da Universidade Federal do Rio Grande do Sul entre os dias 24 - 28/5/2021.
-Ele vai servir como um material de apoio as aulas que serão realizadas remotamente.
+Ele vai servir como um material de apoio para as aulas que serão realizadas remotamente.
 
 **O [link]() para as aulas será disponibilizado um dia antes, para que vocês possam acessar a sala virtual.**
 
@@ -19,7 +19,7 @@ A seguir o cronograma detalhado do curso:
 | tarde (14h - 17h)   | [As ferramentas](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Intro_Git.html) | [Organizando os scripts](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Organizacao_script.html)   | Pratico - mais GitHub                | Trabalho colaborativo  | Dúvidas | Discussao geral |
 
 
-Para acessar o material de acompanhamento referente a cada aula é só clicar em cima dos tópicos presentes no cronograma. Sugiro que acessem o material de apoio antes das aulas para facilitar o acompanhamento do conteúdo.
+Para acessar o material de acompanhamento referente a cada aula é só clicar em cima dos tópicos presentes no cronograma. Sugiro que acessem o material de apoio antes das aulas para facilitar o acompanhamento do conteúdo que será tratado durante as aulas.
 
 Gabriel Nakamura
 

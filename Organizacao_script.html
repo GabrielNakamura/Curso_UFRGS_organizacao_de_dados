@@ -249,7 +249,7 @@ $(document).ready(function () {
   <a href="about.html">Motivação para este curso</a>
 </li>
 <li>
-  <a href="Intro_teorico.html">Introdução - Organização: questão de estilo?</a>
+  <a href="Intro_teorico.html">Introdução - Organização: questão pessoal?</a>
 </li>
 <li>
   <a href="Intro_Git.html">Introdução - instalando e configurando o Git</a>
@@ -289,7 +289,8 @@ $(document).ready(function () {
 read.csv(file.choose())
 
 read.csv2(file.choose())</code></pre>
-<p>Espero esclarecer os porquês de não utilizar estes comandos após o término dessa leitura.</p>
+<p>Espero esclarecer os porquês de não utilizar estes comandos após o término dessa leitura. Mas basicamente, a solução para um script organizado e reprodutivel tem uma formula simples:</p>
+<p><strong>Rproject + here = um script reprodutível</strong></p>
 <div id="os-pecados-capitais-da-organização-e-reprodutibilidade-de-dados" class="section level1">
 <h1>Os pecados capitais da organização e reprodutibilidade de dados</h1>
 <p>1 - <strong>Nunca utilize caminhos absolutos</strong></p>
@@ -301,10 +302,36 @@ read.csv2(file.choose())</code></pre>
 <h2>Por que utilizar o caminho relativo</h2>
 <p>Para responder essa questão basta pegar um código escrito por outra pessoa que usa caminhos relativos em seus scripts e tentar rodar na sua máquina. O que vai acontecer? Uma mensagem de erro.</p>
 <p>Isso acontece pois o caminho absoluto na sua máquina não é o mesmo caminho absoluto da minha, ou de qualquer outra pessoa, a não ser por uma coincidência absurdamente improvável. Logo, a solução para esse problema é a utilização do caminho relativo. E como fazemos isso está no próximo tópico.</p>
+<p>2 - <strong>Nunca salve o workspace</strong></p>
+<p>A razão para isso é que, uma vez o workspace salvo e o script modificado, você não saberá mais a linha de comando utilizada para gerar objetos dentro do R. Além disso, rodar todo o script a cada vez que ele é aberto é uma forma de auditoria pessoal da sua rotina de análise. Mas e se os objetos gerados por algum comando são muito grandes, a ponto de se tornar inviável rodar toda vez todas as partes do script? Por exemplo, existem modelos estatísticos que demoram dias para rodar, logo não é interessante esperar dias para poder obter os objetos toda vez que necessitar mexer em alguma análise. Para isso podemos usar a seguinte função:</p>
+<pre class="r"><code>saveRDS(object = objeto_que_vai_ser_salvo, file = here::here(&quot;output&quot;, &quot;2021-05-17_modelo_demorado.rds&quot;))</code></pre>
+<p>Tente substituir o seu objeto e salvar no seu diretório</p>
+<p>Para ler o objeto salvo</p>
+<pre class="r"><code>modelo_demorado &lt;- readRDS(file = here::here(&quot;output&quot;, &quot;2021-05-17_modelo_demorado.rds&quot;))</code></pre>
 </div>
+<div id="formatação-de-um-script" class="section level2">
+<h2>Formatação de um script</h2>
+<p>Já experimentou ler um documento de texto formatado com letra Arial, 10, sem espaço entre linhas ou sem pontuação adequada? Até conseguimos lê-lo, a custa da saúde de nossos olhos, na melhor das hipóteses. Com um script é a mesma coisa, e a diferença se torna evidente quando comparamos um script bem formatado com um script mal formatado, conseguimos ler ambos, mas o primeiro facilitará muito nossa vida. Apesar de um script não apresentar normas de formatação algumas regras facilita sua leitura:</p>
+<ul>
+<li><strong>Espaços:</strong></li>
+</ul>
+<p>Sempre é desejável utilizar espaços entre operadores lógicos e de atribuição de objetos, por exemplo:</p>
+<pre class="r"><code>resultado_media &lt;- mean(x = valores) # desejável
+resultado_media&lt;-mean(valores) # má formatação</code></pre>
+<p>Espaços depois de vírgulas que separam argumentos</p>
+<pre class="r"><code>resultado_media &lt;- mean(x = valores, na.rm = TRUE) # recomendado
+resultado_media&lt;-mean(x=valores,na.rm=TRUE) # não recomendado</code></pre>
+<p>Isso pode parecer pura perfumaria ou preciosismo de programação, mas imagine ter que revisar um script ou função que apresenta mais de 700 linhas de código (o que não é incomum quando estamos rodando rotinas de análises para nossos projetos). Certamente após terminar você terá dores de cabeça.</p>
+<ul>
+<li><strong>Declaração de argumentos</strong></li>
+</ul>
+<p>As funções são compostas por argumentos, estes podem estar explicitos ou não nas funções, quando explicitos eles tornam a função muito mais intuitiva que quando implícitos. Mas que saco ter que escrever todos os argumentos de uma função, não é mesmo? Aqui mais um motivo para utilizar o client RStudio. Ao apertar o botão TAB de seu teclado dentro de uma função todos os seus argumentos irão aparecer, basta selecionar qual argumento deseja e ele será inserido dentro da função. Lembrando que isso só é possível com o RStudio.</p>
+<ul>
+<li><strong>Declaração de pacotes</strong> Podemos ler os pacotes necessários para as nossas análises na primeira seção de nossos scripts, porém uma prática desejável é declarar explicitamente a função que está sendo utilizada.</li>
+</ul>
 </div>
-<div id="as-soluções---rproject-here-um-script-reprodutível" class="section level1">
-<h1>As soluções &lt;- Rproject + here = um script reprodutível</h1>
+<div id="caminhos-e-leitura-de-dados" class="section level2">
+<h2>Caminhos e leitura de dados</h2>
 <p>Caminhos relativos para os arquivos podem ser obtidos a partir do uso do RStudio, mas especificamente utilizando uma ferramenta do RStudio cahamado Rproject. A mágica do Rproject é transformar todo caminho em relativo, em termos mais simples, ele pega o caminho absoluto e transforma num atalho. Na prático, tudo o que precisa ser informado para leitura de qualquer arquivo agora é o caminho a partir do local onde o Rproject se encontra. Por exemplo, vamos ler o arquivo <code>dados_test</code> que pode ser obtido baixando o repositório <strong>GabrielNakamura/MS_FishPhyloMaker</strong> através do código:</p>
 <pre class="r"><code>download.file(url = &quot;https://github.com/GabrielNakamura/MS_FishPhyloMaker/archive/master.zip&quot;, destfile = &quot;MS_FishPhyloMaker.zip&quot;) # para baixar
 
@@ -330,6 +357,16 @@ raw_data &lt;- read.csv(&quot;~/data/osm-raw-data.csv&quot;, sep=&quot;;&quot;) 
 <p>Todos conseguiram ler? Se sim, conseguimos atingir o primeiro passo para um trabalho reprodutível: <strong>Todos conseguem ler os dados, independente do computador que estivermos</strong></p>
 <p>Para conseguir a reprodutibilidade utilizamos duas ferramentas, o Rproject, que possibilitou a utilização do caminho relativo, por isso informamos apenas que o arquivo “osm-raw-data.csv” está na pasta “data”, pois o diretório raiz agora é aquele em que o projeto está hospedado.</p>
 <p>A segunda ferramenta que utilizamos foi o pacote <a href="https://cran.r-project.org/web/packages/here/index.html">{<code>here</code>}</a>. A importância do pacote, além de simplificar a sintaxe pois precisamos apenas digitar o nome do arquivo e da pasta onde ele se encontra, está no fato de não precisamos ficar ajustando separadores de pastas de acordo com o sistema operacional. Enquanto no sistema OS se utiliza “/”, em Windows se utiliza “//”, com o here não há necessidade de preocupação com a troca do caracter.</p>
+</div>
+</div>
+<div id="estruturando-o-script" class="section level1">
+<h1>Estruturando o script</h1>
+<p>Busque sempre estruturar o seu script, isso quer dizer separar suas partes. Da mesma forma que um texto científico é dividido em seções, a divisão do script em seções também facilita a sua leitura. A forma mais simples de fazer essa divisão é criando seções, estas seções podem ser criadas utilizando o atalho no seu teclado <em>Shift + Ctrl + R</em>. Isso faz abrir uma janela no RStudio que possibilita inserir o nome desejado para a seção. Tente fazer isso no seu computador para ver o que acontece.</p>
+</div>
+<div id="nomeando-os-scripts" class="section level1">
+<h1>Nomeando os scripts</h1>
+<p>Nomeamos coisas para que possamos organizá-las de alguma maneira. Portanto, de nada adianta um script bem organizado com um nome completamente contra-intuitivo, ou que não faça sentido algum, dar nome é coisa séria, e, como todos os outros tópicos, podemos seguir algumas regrinhas, mas o mais importante de tudo é que os nossos padrões sejam consistentes e explicados (por exemplo num README).</p>
+<p>Jenny Bryan destaca duas características fundamentais para a nomeação de scripts, são eles:</p>
 </div>
 
 

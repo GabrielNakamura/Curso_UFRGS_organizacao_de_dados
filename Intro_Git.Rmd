@@ -1,5 +1,5 @@
 ---
-title: "Introdução ao git - Hello Git"
+title: "As ferramentas, ou, Hello Git"
 author: "Gabriel Nakamura"
 date: "5/15/2021"
 html_document:
@@ -17,23 +17,27 @@ html_document:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# As ferramentas
+Nesta primeira seção irei apresentar as principais ferramentas que utilizaremos para nos ajudar na organização de dados. Estas ferramenta irão auxiliar desde a organização local de seus dados até a disponibilização destes dados em plataformas de acesso aberto. Várias delas já devem ser velhas conhecidas por vocês, por exemplo, o RStudio, então dispensam maiores apresentações. Por isso, grande parte deste documento vai tratar de uma ferramenta até bem conhecida pelo nome, mas que pra muita gente pode parecer coisa de outro mundo: o **Git**. Vocês verão que conhecem mais dele do que imaginam, e que muito das funções que ele possibilita, nós realizamos através de outros aplicativos, porém espero conseguir mostrar o quão o **Git** é mais eficiente.
 
+# Hello Git - Introdução ao uso de sistema de controle de versões
 
-## Hello Git - Introdução ao uso de sistema de controle de versões
+O Git trata-se de um sistema de controle de versões, mas afinal, o que é um sistema de controle de versões? Estamos mais acostumados do que imaginamos quando o assunto é controle de versões, apesar de parecer algo de outro mundo. Um exemplo todos nós estamos acostumados é oferecido pelo editor de texto Word, quando ligamos a opção "Track changes". Ao fazermos isso estamos controlando todas as modificações que fazemos em um documento. O Git faz a mesma coisa, porém para uma pasta inteira (ou diretório na linguagem do controle de versões)
 
-O Git trata-se de um sistema de controle de versões, mas afinal, o que é um sistema de controle de versões? Estamos mais acostumados do que pensamos quando o assunto é controle de versões, apesar de parecer algo de outro mundo. Um exemplo de sistema de controle de versões que todos nós estamos acostumados é oferecida pelo editor de texto Word, quando ligamos a opção "Track changes". Ao fazermos isso estamos controlando todas as modificações que fazemos em um documento. O Git faz a mesma coisa, porém para uma pasta (ou diretório na linguagem do controle de versões)
-
-O Git nada mais é que um sistema criado para realizar explicitamente o controle das versões de seus arquivos. Digo aqui explicitamente pois tudo que é feito no Git é observado (watch na linguagem de versionamento).
+Portanto, o Git nada mais é que um sistema criado para realizar explicitamente o controle das versões de seus arquivos. Digo aqui explicitamente pois tudo que é feito no Git é observado (*watch* na linguagem do versionamento).
 
 ## Git e GitHub
 
-Uma simples analogia para compreender a diferença entre Git e GitHub é a diferença entre R e RStudio. O R é a ferramenta o RStudio é uma interface específica e amigável para o uso do R. Da mesma forma o Git é a ferramenta utilizada para controle de versão, já o GitHub é uma interface específica utilizada para que o usuário possa interagir de maneira mais amigável com o Git. Existem outras interfaces que podemos utilizar para realizar essa interação, por exemplo o (GitKraken)[] ou (GitBucket)[]. Neste curso utilizaremos o GitHub por se tratar da ferramenta mais utilizada dentro dos estudos de ecologia, a que apresenta a maior quantidade de materiais disponíveis na internet e também por ser aquela que o instrutor que vos fala mais tem familiaridade. Outra funcionalidade do GitHub é armazenar remotamente todos os trabalhos que são feitos localmente com o Git, isso é análogo ao uso de ferramentas como OneDrive ou GoogleDrive para armazenar remotamente nossas pastas presentes no nosso computador pessoal.
+Git e [GitHub](https://github.com/) são coisas distintas. O GitHub é o GoogleDrive (ou o OneDrive) dos códigos. Ele tem como função armazenar remotamente todos os trabalhos que são feitos localmente com o Git. Porém, com mais potencialidades e controle de armazenamento que as ferramentas do Bill Gates.
+
+## Git e Git client
+
+Uma simples analogia para entender a diferença entre um Git client e o Git é a diferença entre R e RStudio. O R é a ferramenta onde os processos são realizados, o RStudio é uma interface específica e amigável para o uso do R. Da mesma forma o Git é a ferramenta que realiza o controle de versão, o Git client é uma interface específica para que o usuário possa interagir de maneira mais amigável com o Git e GitHub. Existem vários Git clients que podemos utilizar para realizar essa interação, por exemplo, o [GitKraken](https://www.gitkraken.com/) e [GitLab](https://about.gitlab.com/). Cada um tem suas vantagens e desvantagens.
+
+Neste curso usaremos um Git client que é um velho conhecido nosso, o RStudio. Faremos isso  por se tratar da interface mais comum dentro dos estudos de ecologia, a que apresenta uma grande quantidade de materiais disponíveis na internet e também por ser aquela que o instrutor que vos fala tem mais familiaridade. 
 
 ## Integrando Git, GitHub e RStudio
 
-Imagine um sistema que integra o seu programa favorido de análises estatísticas, junto com o seu programa favorito de controle de versões e também o seu programa favorito de nuvem. Pois é disso que se trata a integração do Git com o GitHub através do RStudio. Tudo (quase tudo) pode ser feito no Git através do uso do RStudio e Github. Da mesma forma que tornamos nossos trabalhos locais, ou seja, aqueles que se encontram hospedados em nossos computadores, conectados a um serviço de nuvem para evitar possíveis dores de cabeça (por exemplo a morte do seu computador e perda do trabalho de um mestrado ou doutorado inteiro), o RStudio oferece a possibilidade de conectar suas pastas com um serviço remoto, que por sua vez é o GitHub.
-
+Imagine um sistema que integra o seu programa favorido de análises estatísticas, o seu programa favorito de controle de versões e também o seu repositório remoto favorito. Pois é disso que se trata a integração do Git com o GitHub e RStudio. Tudo (quase tudo) pode ser feito no Git através do uso do RStudio e GitHub. Da mesma forma que tornamos nossos trabalhos locais, ou seja, aqueles que se encontram hospedados em nossos computadores, conectados a um serviço de nuvem para evitar possíveis dores de cabeça (por exemplo a morte do seu computador e perda do trabalho de um mestrado ou doutorado inteiro).
 
 # Mãos no teclado - Instalando e configurando o Git
 
@@ -44,7 +48,7 @@ O primeiro passo antes de instalar o Git é saber se você já tem ele instalado
 which git
 ```
 
-Caso retorne uma mensagem indicando o local do git no seu computador, ótimo, uma tarefa a menos, caso contrário você terá que instalar o git de acordo com as especificidades do seu sistema operacional
+Caso retorne uma mensagem indicando o local do git no seu computador, ótimo, uma tarefa a menos, caso contrário você terá que instalar o git de acordo com as especificidades do seu sistema operacional que serão apresentadas a seguir.
 
 ## Instalação do Git no Windows
 
@@ -54,7 +58,7 @@ Instale o Git acessando [aqui](https://gitforwindows.org/)
 
 Instale o Git no seu Mac baixando o Xcode command line tools caso você ainda não o tenha. Esta aplicação já vem com o git.
 
-Em segida configure o git a linha de comando seguinte:
+Em seguida configure o git usando a linha de comando seguinte:
 
 ```{r echo=TRUE, eval=FALSE}
 git --version
@@ -79,7 +83,7 @@ sudo yum install git
 
 ## Configurando o git pelo RStudio
 
-Para configurar o Git, ou seja, para que o Git saiba quem é você na fila do pão, use:
+Para configurar o Git, ou seja, para que o Git saiba quem está o usando, digite:
 
 ```{r}
 library(usethis)
@@ -90,27 +94,41 @@ Lembre de substituir os campos com suas informações.
 
 Uma outra opção é não fazer nada disso, pois em muitos computadores o RStudio já irá reconhecer automaticamente o Git instalado no seu computador, desta maneira, a primeira vez que subir (push) algo para o GitHub você deverá realizar a sua autenticação, assim o Git saberá com quem ele está "falando".
 
-## Instalando um Git Client 
-
-A boa notícia aqui é que você não precisará instalar um Git Client, pois você provavelmente está com ele aberto nesse momento, e ele responde pelo nome de RStudio!
-
 ## Certificando que você está conectado ao GitHub
 
 Neste momento já digo, calma, a maior parte das coisas que faremos nesse curso não necessita da famigerada e temida linha de comando do seu sistema operacional. Agora vamos usá-la apenas para nos certificarmos que o Git consegue se comunicar com o GitHub
 
-
-## Conectando o RStudio ao Github
+## Conectando Git, RStudio e Github
 
 Para fazer isso você precisa ter uma conta criada no GitHub. Tendo sua conta feita, crie um
-repositório, este vai ser o repositório que irá usar ao longo do curso. Ele pode ser uma pasta que contém os documentos (análises, scripts, documentos de texto, dados, figuras etc). Ou pode ser um novo diretório, iniciado do zero, que você decidiu mudar de vida e organizar a partir das maravilhas que o Git pode te oferecer. Qualquer que seja sua opção é interessante que este diretório seja aquele que você vai trabalhar ao longo desse curso.
+repositório, este vai ser o repositório que irá usar ao longo do curso. Ele pode ser uma pasta que contém os documentos (análises, scripts, documentos de texto, dados, figuras etc). Ou pode ser um novo diretório, iniciado do zero. Qualquer que seja sua opção é interessante que este diretório seja o que você vai trabalhar ao longo desse curso.
 
 **PS: Não tenha medo de utilizar um repositório pronto, se coisas derem errado ao longo do curso nada vai apagar o seu repositório local ou quaisquer outros documentos que tenha no seu computador, no máximo, você terá que iniciar todo seu repositório remoto a partir do zero, sem nenhum dano para seu trabalho local**
 
-1 - Copie 
+Para conectar o GitHub com o RStudio e Git vamos fazer o seguinte:
 
-2 - Baixe o [Git](https://git-scm.com/downloads) de acordo com o seu sistema operacional, caso você ainda não tenha baixado
+1 - Crie um repositório 
 
-2 - Instale um programa para servir de interface para o uso do Git, a ótima notícia aqui é que você já deve ter esse programa, e ele se chama RStudio!!! Mas para quem não tem ainda, é só baixar por [aqui](https://www.rstudio.com/products/rstudio/)
+![Criando um novo repositório.](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Git1.png)
+2 - Nomeando e criando o README
+
+![Escolha um nome para seu repositório.](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Git2.png)
+
+3 - Clonando
+
+![O Clone](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Git3_clone.png)
+3 - Indicando pro ao Git para onde "olhar" remotamente
+
+Nesse passo iremos informar ao Git via RStudio para onde ele deve olhar remotamente, ou seja, qual a pasta local que deve estar conectada com o repositório remoto. Primeiro selecionamos em "Arquivo" um novo Projeto. Ao abrir uma janela selecionaremos a opção de "Version Control"
+
+![RStudio is watching you](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Git3_Rstudio.png)
+
+Após isso informamos o endereço do repositório remoto, ou seja, aquele que criamos no Github.
+
+![Endereço do seu GitHub](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Git4_https.png)
+Pronto, neste momento a pasta que acabou de ser criada no seu computador está sendo olhada pelo Git e hospedada remotamente no GitHub. Qualquer modificação que nela fizer será monitorado pelo Git. Essa é o resultado da mistura do R + Git + RStudio
+
+![](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Fusao_Git_R.png)
 
 # Git dictionary
 
@@ -118,6 +136,7 @@ Este glossário visa listar as palavras comumente usadas na linguagem de control
 
 -  **directory** = pasta
 -  **commit** = aposto que você já adicionou alguma vez na sua vida a uma versão de seu arquivo a data ou algo do tipo "arquivo_V3_final". Se sim, você já fez um commit. Fazer um commit é a mesma coisa que comentar as mudanças que foram feitas e adicioná-las ao seu novo arquivo
+-  **clone** =  o que o próprio nome diz. Clonar o repositório remoto na sua máquina
 -  **pull** = baixar dados para (geralmente seu computador)
 -  **push** = subir dados para (geralmente para um servidor remoto a.k.a nuvem)
 -  **main** ou **master** = pasta remota
