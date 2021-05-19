@@ -27,3 +27,8 @@ Não estou dizendo que a boa gestão de dados é a panaceia para todos os proble
 
 Para tentar reduzir este tipo de erro (deliberado ou não) devemos garantir que nossos dados sejam acessíveis e reprodutiveis. Conseguimos acessar com facilidade os dados daquele artigo para entendermos a fundo o que foi feito? Conseguios reproduzir aquela análise publicada de modo que consigamos expandir a proposta? Conseguimos reproduzir todos os passos de nossos próprios projetos após finalizado? Estas são algumas perguntas que podemos nos fazer para garantir a organização e a reprodutibilidade de nossas pesquisas.
 
+# Leituras importantes
+
+- [Perkel, Jeffrey. Democratic databases: Science on GitHub. 2016. Nature](https://www.nature.com/news/democratic-databases-science-on-github-1.20719)
+- [Five concrete reasons your students should be learning to analyzing data in a reproducible way](https://chance.amstat.org/2014/09/reproducible-paradigm/)
+- [Publish your computer code: it is good enough](https://www.nature.com/news/2010/101013/pdf/467753a.pdf)

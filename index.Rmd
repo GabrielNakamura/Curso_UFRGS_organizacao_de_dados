@@ -15,7 +15,7 @@ A seguir o cronograma detalhado do curso:
 
 | turno/dia| 24/05                             | 25/05                                      | 26/05                      | 27/05 | 28/05 |            
 | :------- | :----------------------:| :----------------------------------------: | :----------------------------------: | :---- | :---  |
-| manha (9h-12h)    | [Fundamentos basicos](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Intro_Git.html)     | [Organizando o diretorio](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Organizacao_dir_local.html)  | comandos basicos do GitHub | Documentando resultados | Duvidas | Discussao geral |
+| manha (9h-12h)    | [Fundamentos basicos](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Intro_teorico.html)     | [Organizando o diretorio](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Organizacao_dir_local.html)  | comandos basicos do GitHub | Documentando resultados | Duvidas | Discussao geral |
 | tarde (14h - 17h)   | [As ferramentas](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Intro_Git.html) | [Organizando os scripts](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Organizacao_script.html)   | Pratico - mais GitHub                | Trabalho colaborativo  | Dúvidas | Discussao geral |
 
 

@@ -17,13 +17,13 @@ html_document:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Nesta primeira seção irei apresentar as principais ferramentas que utilizaremos para nos ajudar na organização de dados. Estas ferramenta irão auxiliar desde a organização local de seus dados até a disponibilização destes dados em plataformas de acesso aberto. Várias delas já devem ser velhas conhecidas por vocês, por exemplo, o RStudio, então dispensam maiores apresentações. Por isso, grande parte deste documento vai tratar de uma ferramenta até bem conhecida pelo nome, mas que pra muita gente pode parecer coisa de outro mundo: o **Git**. Vocês verão que conhecem mais dele do que imaginam, e que muito das funções que ele possibilita, nós realizamos através de outros aplicativos, porém espero conseguir mostrar o quão o **Git** é mais eficiente.
+Nesta primeira seção irei apresentar as principais ferramentas que utilizaremos para nos ajudar na organização de dados. Estas ferramenta irão auxiliar desde a organização local de seus dados até a disponibilização destes dados em plataformas de acesso aberto. Várias delas já devem ser velhas conhecidas por vocês, por exemplo, o RStudio, então dispensam maiores apresentações. Por isso, grande parte deste documento vai tratar de uma ferramenta até bem conhecida pelo nome, mas que pra muita gente pode parecer coisa de outro mundo: o **Git**. Vocês verão que conhecem mais dele do que imaginam, e que muitas das funções que ele possibilita realizar nós fazemos em nosso dia-a-dia através de outros aplicativos, porém, espero conseguir mostrar o quão o **Git** é mais eficiente.
 
 # Hello Git - Introdução ao uso de sistema de controle de versões
 
-O Git trata-se de um sistema de controle de versões, mas afinal, o que é um sistema de controle de versões? Estamos mais acostumados do que imaginamos quando o assunto é controle de versões, apesar de parecer algo de outro mundo. Um exemplo todos nós estamos acostumados é oferecido pelo editor de texto Word, quando ligamos a opção "Track changes". Ao fazermos isso estamos controlando todas as modificações que fazemos em um documento. O Git faz a mesma coisa, porém para uma pasta inteira (ou diretório na linguagem do controle de versões)
+O Git trata-se de um sistema de controle de versões, mas afinal, o que é um sistema de controle de versões? Estamos mais acostumados do que imaginamos quando o assunto é controle de versões, apesar de parecer algo de outro mundo. Um exemplo que todos nós estamos acostumados é oferecido pelo editor de texto Word, quando ligamos a opção "Track changes". Ao fazermos isso estamos controlando todas as modificações que fazemos em um documento. O Git faz a mesma coisa, porém para uma pasta inteira (ou *diretório*, na linguagem do controle de versões).
 
-Portanto, o Git nada mais é que um sistema criado para realizar explicitamente o controle das versões de seus arquivos. Digo aqui explicitamente pois tudo que é feito no Git é observado (*watch* na linguagem do versionamento).
+Portanto, o Git nada mais é que um sistema criado para realizar o rastreio de toda e qualquer modificação de arquivos dentro de uma pasta, utilizando a terminologia do versionamento, tudo o que é feito em um diretório associado ao Git é *observado* (*watch* na linguagem do versionamento).
 
 ## Git e GitHub
 
@@ -130,9 +130,20 @@ Pronto, neste momento a pasta que acabou de ser criada no seu computador está s
 
 ![](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Fusao_Git_R.png)
 
+# Pacotes que utilizaremos ao longo desse curso
+
+Durante esse curso utilizaremos alguns pacotes em R para nos auxiliar a garantir a organização e reprodutibilidade dos nossos dados. Se você não os tem instalado no seu computador sugiro que os instale antes da aula. Para instalar ou atualizar use:
+
+```{r echo=TRUE, eval=FALSE}
+packages <- c("devtools", "rmarkdown", "here", "usethis")
+lapply(packages, function(x) install.packages(x))
+
+```
+
+
 # Git dictionary
 
-Este glossário visa listar as palavras comumente usadas na linguagem de controle de versão, atribuindo a elas seus respectivos significados em uma linguagem acessível para nós, ecólogos/zoólogos/botânicos que visam se aventurar no mundo do controle de versões que o Git, mais especificamente o GitHub, nos oferece
+Este glossário visa listar as palavras comumente usadas na linguagem de controle de versão, atribuindo a elas seus respectivos significados em uma linguagem acessível para nós, ecólogos/zoólogos/botânicos, que visamos nos aventurar no mundo do controle de versões
 
 -  **directory** = pasta
 -  **commit** = aposto que você já adicionou alguma vez na sua vida a uma versão de seu arquivo a data ou algo do tipo "arquivo_V3_final". Se sim, você já fez um commit. Fazer um commit é a mesma coisa que comentar as mudanças que foram feitas e adicioná-las ao seu novo arquivo
@@ -152,6 +163,5 @@ Este glossário visa listar as palavras comumente usadas na linguagem de control
 
 - [Happy Git with R - Jenny Bryan](https://happygitwithr.com/)
 - [Git and GitHub for advanced ecological data analysis](https://afredston.github.io/learn-git/learn-git.html?s=03)
-- [Perkel, Jeffrey. Democratic databases: Science on GitHub. 2016. Nature](https://www.nature.com/news/democratic-databases-science-on-github-1.20719)
 - [Lista](https://ohshitgit.com/) sobre o que fazer quando coisas dão errada no Git
 - [Tornando o código citável](https://guides.github.com/activities/citable-code/)

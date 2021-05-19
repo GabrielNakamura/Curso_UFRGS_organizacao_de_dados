@@ -7,9 +7,9 @@ navbar:
       href: index.html
     - text: "Motivação para este curso"
       href: about.html
-    - text: "Introdução - Organização: questão pessoal?"
+    - text: "Organização: questão pessoal?"
       href: Intro_teorico.html
-    - text: "Introdução - instalando e configurando o Git"
+    - text: "Ferramentas - instalando e configurando o Git"
       href: Intro_Git.html
     - text: "Organizando o diretório"
       href: Organizacao_dir_local.html
