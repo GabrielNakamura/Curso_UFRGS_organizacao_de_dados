@@ -249,10 +249,10 @@ $(document).ready(function () {
   <a href="about.html">Motivação para este curso</a>
 </li>
 <li>
-  <a href="Intro_teorico.html">Introdução - Organização: questão pessoal?</a>
+  <a href="Intro_teorico.html">Organização: questão pessoal?</a>
 </li>
 <li>
-  <a href="Intro_Git.html">Introdução - instalando e configurando o Git</a>
+  <a href="Intro_Git.html">Ferramentas - instalando e configurando o Git</a>
 </li>
 <li>
   <a href="Organizacao_dir_local.html">Organizando o diretório</a>
@@ -279,11 +279,11 @@ $(document).ready(function () {
 </div>
 
 
-<p>Nesta primeira seção irei apresentar as principais ferramentas que utilizaremos para nos ajudar na organização de dados. Estas ferramenta irão auxiliar desde a organização local de seus dados até a disponibilização destes dados em plataformas de acesso aberto. Várias delas já devem ser velhas conhecidas por vocês, por exemplo, o RStudio, então dispensam maiores apresentações. Por isso, grande parte deste documento vai tratar de uma ferramenta até bem conhecida pelo nome, mas que pra muita gente pode parecer coisa de outro mundo: o <strong>Git</strong>. Vocês verão que conhecem mais dele do que imaginam, e que muito das funções que ele possibilita, nós realizamos através de outros aplicativos, porém espero conseguir mostrar o quão o <strong>Git</strong> é mais eficiente.</p>
+<p>Nesta primeira seção irei apresentar as principais ferramentas que utilizaremos para nos ajudar na organização de dados. Estas ferramenta irão auxiliar desde a organização local de seus dados até a disponibilização destes dados em plataformas de acesso aberto. Várias delas já devem ser velhas conhecidas por vocês, por exemplo, o RStudio, então dispensam maiores apresentações. Por isso, grande parte deste documento vai tratar de uma ferramenta até bem conhecida pelo nome, mas que pra muita gente pode parecer coisa de outro mundo: o <strong>Git</strong>. Vocês verão que conhecem mais dele do que imaginam, e que muitas das funções que ele possibilita realizar nós fazemos em nosso dia-a-dia através de outros aplicativos, porém, espero conseguir mostrar o quão o <strong>Git</strong> é mais eficiente.</p>
 <div id="hello-git---introdução-ao-uso-de-sistema-de-controle-de-versões" class="section level1">
 <h1>Hello Git - Introdução ao uso de sistema de controle de versões</h1>
-<p>O Git trata-se de um sistema de controle de versões, mas afinal, o que é um sistema de controle de versões? Estamos mais acostumados do que imaginamos quando o assunto é controle de versões, apesar de parecer algo de outro mundo. Um exemplo todos nós estamos acostumados é oferecido pelo editor de texto Word, quando ligamos a opção “Track changes”. Ao fazermos isso estamos controlando todas as modificações que fazemos em um documento. O Git faz a mesma coisa, porém para uma pasta inteira (ou diretório na linguagem do controle de versões)</p>
-<p>Portanto, o Git nada mais é que um sistema criado para realizar explicitamente o controle das versões de seus arquivos. Digo aqui explicitamente pois tudo que é feito no Git é observado (<em>watch</em> na linguagem do versionamento).</p>
+<p>O Git trata-se de um sistema de controle de versões, mas afinal, o que é um sistema de controle de versões? Estamos mais acostumados do que imaginamos quando o assunto é controle de versões, apesar de parecer algo de outro mundo. Um exemplo que todos nós estamos acostumados é oferecido pelo editor de texto Word, quando ligamos a opção “Track changes”. Ao fazermos isso estamos controlando todas as modificações que fazemos em um documento. O Git faz a mesma coisa, porém para uma pasta inteira (ou <em>diretório</em>, na linguagem do controle de versões).</p>
+<p>Portanto, o Git nada mais é que um sistema criado para realizar o rastreio de toda e qualquer modificação de arquivos dentro de uma pasta, utilizando a terminologia do versionamento, tudo o que é feito em um diretório associado ao Git é <em>observado</em> (<em>watch</em> na linguagem do versionamento).</p>
 <div id="git-e-github" class="section level2">
 <h2>Git e GitHub</h2>
 <p>Git e <a href="https://github.com/">GitHub</a> são coisas distintas. O GitHub é o GoogleDrive (ou o OneDrive) dos códigos. Ele tem como função armazenar remotamente todos os trabalhos que são feitos localmente com o Git. Porém, com mais potencialidades e controle de armazenamento que as ferramentas do Bill Gates.</p>
@@ -357,9 +357,15 @@ use_git_config(user.name = &quot;SeuNomeDeUsuario&quot;, user.email = &quot;seuM
 <p><img src="Fusao_Git_R.png" /></p>
 </div>
 </div>
+<div id="pacotes-que-utilizaremos-ao-longo-desse-curso" class="section level1">
+<h1>Pacotes que utilizaremos ao longo desse curso</h1>
+<p>Durante esse curso utilizaremos alguns pacotes em R para nos auxiliar a garantir a organização e reprodutibilidade dos nossos dados. Se você não os tem instalado no seu computador sugiro que os instale antes da aula. Para instalar ou atualizar use:</p>
+<pre class="r"><code>packages &lt;- c(&quot;devtools&quot;, &quot;rmarkdown&quot;, &quot;here&quot;, &quot;usethis&quot;)
+lapply(packages, function(x) install.packages(x))</code></pre>
+</div>
 <div id="git-dictionary" class="section level1">
 <h1>Git dictionary</h1>
-<p>Este glossário visa listar as palavras comumente usadas na linguagem de controle de versão, atribuindo a elas seus respectivos significados em uma linguagem acessível para nós, ecólogos/zoólogos/botânicos que visam se aventurar no mundo do controle de versões que o Git, mais especificamente o GitHub, nos oferece</p>
+<p>Este glossário visa listar as palavras comumente usadas na linguagem de controle de versão, atribuindo a elas seus respectivos significados em uma linguagem acessível para nós, ecólogos/zoólogos/botânicos, que visamos nos aventurar no mundo do controle de versões</p>
 <ul>
 <li><strong>directory</strong> = pasta</li>
 <li><strong>commit</strong> = aposto que você já adicionou alguma vez na sua vida a uma versão de seu arquivo a data ou algo do tipo “arquivo_V3_final”. Se sim, você já fez um commit. Fazer um commit é a mesma coisa que comentar as mudanças que foram feitas e adicioná-las ao seu novo arquivo</li>
