@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Organização - questão de estilo?
 
-"Eu me acho na minha bagunça", quem nunca ouviu essa frase, ou já pronunciou? Provavelmente todos nós. Mas o conceito de **organização**, seria mesmo uma questão pessoal? Podemos discutir isso durante horas a fio se estivermos falando do seu quarto, da sua estante ou do seu guarda-roupa, mas quando falamos de ciência, ou seja, uma atividade coletiva, organização **não** é uma questão pessoal, justamente por ser coletiva. Sempre trabalhamos em conjunto, e isso pode ser com um grupo composto por muitas pessoas que trabalham em um determinado projeto, ou pode ser consigo mesmo, o seu eu do futuro. Desta maneira, é necessário que tudo que foi utilizado para o desenvolvimento do seu projeto científico seja de fácil compreensão para seus colaboradores ou para o seu "eu" do futuro. 
+"Eu me acho na minha bagunça", quem já ouviu essa frase, ou já pronunciou? Provavelmente todos nós. Mas o conceito de **organização** seria mesmo uma questão pessoal? Podemos discutir isso durante horas a fio se estivermos falando do seu quarto, da sua estante ou do seu guarda-roupa, mas quando falamos de ciência, ou seja, uma atividade coletiva, organização **não** é uma questão pessoal, justamente por ser coletiva. Sempre trabalhamos em conjunto, e isso pode ser com um grupo composto por muitas pessoas que trabalham em um determinado projeto, ou pode ser consigo mesmo, o seu eu do futuro. Desta maneira, é necessário que tudo que foi utilizado para o desenvolvimento do seu projeto científico seja de fácil compreensão para seus colaboradores ou para o seu "eu" do futuro. 
 
 # Um esquema geral (mas não absoluto) para organização do diretório local
 
@@ -21,7 +21,7 @@ Digo que não é absoluto pois modificações nesse esquema podem ser feita para
 
 ![Um diretório organizado.](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/directory_org.jpg)
 
-Mas, qual a lógica por trás dessa organização desse diretório? Seguimos a proposta presente na figura seguinte, inspirada pelo original presente  [aqui](https://docs.google.com/presentation/d/1Px9Npa_ANqmmfjCXo9A-eBmWzgUmmkCKd7fBIq_gG6k/edit#slide=id.g62fc6bf72f_0_7). 
+Mas, qual a lógica por trás da organização desse diretório? Seguimos a proposta presente na figura seguinte [(original pode ser visto aqui)](https://docs.google.com/presentation/d/1Px9Npa_ANqmmfjCXo9A-eBmWzgUmmkCKd7fBIq_gG6k/edit#slide=id.g62fc6bf72f_0_7). 
 
 Nesta proposta os arquivos dentro de um projeto são organizados em 4 pastas que contemplam quase todos os documentos que geramos ou que precisamos quando estamos desenvolvendo um projeto científico.
 
@@ -35,7 +35,9 @@ Nesta proposta os arquivos dentro de um projeto são organizados em 4 pastas que
 
 O README é uma das partes mais importantes do seu diretório, ele é escrito em caixa alta justamente para que a pessoa que esteja acesssando o seu diretório ouça a sua voz gritando **Me leia por favor!!**.
 
-Neste arquivo de texto você irá encontrar as principais instruções sobre a estrutura do diretório, incluindo os nomes das pessoas que montaram o diretório, além de instruções básicas sobre o que contém em cada pasta.
+Neste arquivo de texto você irá encontrar as principais instruções sobre a estrutura do diretório, incluindo os nomes das pessoas que montaram o diretório, além de instruções básicas sobre o que contém em cada pasta. [Aqui você pode encontrar um exemplo de README contendo as informações básicas necessárias que ele deve conter e porque](https://www.makeareadme.com/). [Aqui um template que pode ser adaptado para os seus propósitos](https://github.com/jehna/readme-best-practices/blob/master/README-default.md). [Aqui algumas dicas interessantes em português](https://blog.rocketseat.com.br/como-fazer-um-bom-readme/).
+
+É importante saber que você não irá encontrar a resposta final para o README perfeito. Os detalhes de cada README vão variar dependendo do projeto que está desenvolvendo e a forma como ele deve ser apresentado ao usuário. Por exemplo, se o projeto se trata de um repositório de arquivos e scripts de um manuscrito, e não de um README de um projeto de software, não precisa haver alguns campos de explicação, tais como exemplo de uso ou antigas versões de lançamento.
 
 # Os metadados
 
