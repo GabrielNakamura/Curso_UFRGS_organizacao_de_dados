@@ -27,10 +27,6 @@ Nesta proposta os arquivos dentro de um projeto são organizados em 4 pastas que
 
 ![Um template básico para um diretório bem organizado.](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/template_general.jpg)
 
-## Nomeando arquivos no diretório 
-
-[Principal referência](http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf)
-
 # O README
 
 O README é uma das partes mais importantes do seu diretório, ele é escrito em caixa alta justamente para que a pessoa que esteja acesssando o seu diretório ouça a sua voz gritando **Me leia por favor!!**.

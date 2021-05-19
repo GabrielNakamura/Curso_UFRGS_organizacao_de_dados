@@ -15,4 +15,6 @@ navbar:
       href: Organizacao_dir_local.html
     - text: "Organizando os scripts"
       href: Organizacao_script.html
+    - text: "Git - comandos básicos"
+      href: Git_comandos_basicos.html
       

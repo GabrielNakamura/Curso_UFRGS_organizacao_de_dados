@@ -1,0 +1,16 @@
+---
+title: "Comandos básicos do Git"
+author: "Gabriel Nakamura"
+date: "5/19/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Em cima, em baixo, *Push* e vai
+
+Modifica, salva, faz commit, faz pull, faz push e voilá, está completo o ciclo básico de operações que precisa fazer para alimentar seu GitHub.
+
+
