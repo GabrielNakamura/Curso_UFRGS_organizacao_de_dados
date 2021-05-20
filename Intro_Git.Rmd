@@ -31,17 +31,17 @@ Git e [GitHub](https://github.com/) são coisas distintas. O GitHub é o GoogleD
 
 ## Git e Git client
 
-Uma simples analogia para entender a diferença entre um Git client e o Git é a diferença entre R e RStudio. O R é a ferramenta onde os processos são realizados, o RStudio é uma interface específica e amigável para o uso do R. Da mesma forma o Git é a ferramenta que realiza o controle de versão, o Git client é uma interface específica para que o usuário possa interagir de maneira mais amigável com o Git e GitHub. Existem vários Git clients que podemos utilizar para realizar essa interação, por exemplo, o [GitKraken](https://www.gitkraken.com/) e [GitLab](https://about.gitlab.com/). Cada um tem suas vantagens e desvantagens.
+Uma simples analogia para entender a diferença entre um Git client e o Git é a diferença entre R e RStudio. O R é a ferramenta onde os processos são realizados, o RStudio é uma interface específica e amigável para o uso do R. Da mesma forma o Git é a ferramenta que realiza o controle de versão, já o Git client é a interface específica para que o usuário possa interagir de maneira mais amigável com o Git e GitHub. Existem vários Git clients que podemos utilizar para realizar essa interação, por exemplo, o [GitKraken](https://www.gitkraken.com/) e [GitLab](https://about.gitlab.com/). Cada um tem suas vantagens e desvantagens.
 
 Neste curso usaremos um Git client que é um velho conhecido nosso, o RStudio. Faremos isso  por se tratar da interface mais comum dentro dos estudos de ecologia, a que apresenta uma grande quantidade de materiais disponíveis na internet e também por ser aquela que o instrutor que vos fala tem mais familiaridade. 
 
 ## Integrando Git, GitHub e RStudio
 
-Imagine um sistema que integra o seu programa favorido de análises estatísticas, o seu programa favorito de controle de versões e também o seu repositório remoto favorito. Pois é disso que se trata a integração do Git com o GitHub e RStudio. Tudo (quase tudo) pode ser feito no Git através do uso do RStudio e GitHub. Da mesma forma que tornamos nossos trabalhos locais, ou seja, aqueles que se encontram hospedados em nossos computadores, conectados a um serviço de nuvem para evitar possíveis dores de cabeça (por exemplo a morte do seu computador e perda do trabalho de um mestrado ou doutorado inteiro).
+Imagine um sistema que integra o seu programa favorito de análises estatísticas, o seu programa favorito de controle de versões e também o seu repositório remoto favorito. Pois é disso que se trata a integração do Git com o GitHub e RStudio. Tudo (quase tudo) pode ser feito no Git através do uso do RStudio e GitHub. Da mesma forma que tornamos nossos trabalhos locais, ou seja, aqueles que se encontram hospedados em nossos computadores, conectados a um serviço de nuvem para evitar possíveis dores de cabeça (por exemplo a morte do seu computador e perda do trabalho de um mestrado ou doutorado inteiro).
 
 # Mãos no teclado - Instalando e configurando o Git
 
-O primeiro passo antes de instalar o Git é saber se você já tem ele instalado em seu computador. Para tanto você deve acessar a linha de comando de seu sistema operacional (isso vai variar dependendo do tipo de sistema que usa) e digitar o comando:
+O primeiro passo antes de instalar o Git é saber se você já tem ele instalado em seu computador. Para tanto você deve acessar a linha de comando de seu sistema operacional (bash, prompt, isso vai variar dependendo do tipo de sistema que usa) e digitar o comando:
 
 
 ```{r echo=TRUE, eval=FALSE}
@@ -83,63 +83,51 @@ sudo yum install git
 
 ## Configurando o git pelo RStudio
 
-Para configurar o Git, ou seja, para que o Git saiba quem está o usando, digite:
+Após a instalação do git devemos configurá-lo no nosso computador. Para configurar o Git, ou seja, para que o Git saiba quem está o usando, abra o RStudio e digite:
 
 ```{r}
 library(usethis)
 use_git_config(user.name = "SeuNomeDeUsuario", user.email = "seuMail@example.br")
 ```
 
-Lembre de substituir os campos com suas informações. 
+Lembre de substituir os campos que aparecerão no console do seu R com suas informações. 
 
 Uma outra opção é não fazer nada disso, pois em muitos computadores o RStudio já irá reconhecer automaticamente o Git instalado no seu computador, desta maneira, a primeira vez que subir (push) algo para o GitHub você deverá realizar a sua autenticação, assim o Git saberá com quem ele está "falando".
 
-## Certificando que você está conectado ao GitHub
 
-Neste momento já digo, calma, a maior parte das coisas que faremos nesse curso não necessita da famigerada e temida linha de comando do seu sistema operacional. Agora vamos usá-la apenas para nos certificarmos que o Git consegue se comunicar com o GitHub
+**Neste momento já digo, calma, a maior parte das coisas que faremos nesse curso não necessita da famigerada e temida linha de comando do seu sistema operacional. Em alguns momentos vamos usá-la apenas para nos certificarmos que o Git consegue se comunicar com o GitHub**
 
 ## Conectando Git, RStudio e Github
 
-Para fazer isso você precisa ter uma conta criada no GitHub. Tendo sua conta feita, crie um
-repositório, este vai ser o repositório que irá usar ao longo do curso. Ele pode ser uma pasta que contém os documentos (análises, scripts, documentos de texto, dados, figuras etc). Ou pode ser um novo diretório, iniciado do zero. Qualquer que seja sua opção é interessante que este diretório seja o que você vai trabalhar ao longo desse curso.
-
-**PS: Não tenha medo de utilizar um repositório pronto, se coisas derem errado ao longo do curso nada vai apagar o seu repositório local ou quaisquer outros documentos que tenha no seu computador, no máximo, você terá que iniciar todo seu repositório remoto a partir do zero, sem nenhum dano para seu trabalho local**
-
-Para conectar o GitHub com o RStudio e Git vamos fazer o seguinte:
+Para fazer isso você já precisa ter uma conta criada no GitHub e o Git instalado. Tendo sua conta feita vá o seu navegador de internet, acesse o site do GitHub e faça o login. Feito isso:
 
 1 - Crie um repositório 
 
+Crie um novo repositório clicando no botão destacado na figura abaixo
+
 ![Criando um novo repositório.](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Git1.png)
 2 - Nomeando e criando o README
+Selecione a opção *Public* e *Add a README file*. Mais para frente iremos entender do que se trata o README e sua importanci, por hora vamos apenas dizer que queremos um arquivo com esse nome no nosso novo repositório.
 
 ![Escolha um nome para seu repositório.](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Git2.png)
 
 3 - Clonando
 
+Após criado o repositório vamos clonar ele para a nossa máquina, ou seja, vamos baixá-lo em nosso computador. Para fazer isso basta copiar o endereço https que aparece em destaque na figura abaixo, quando clicamos em *Code*
+
 ![O Clone](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Git3_clone.png)
 3 - Indicando pro ao Git para onde "olhar" remotamente
 
-Nesse passo iremos informar ao Git via RStudio para onde ele deve olhar remotamente, ou seja, qual a pasta local que deve estar conectada com o repositório remoto. Primeiro selecionamos em "Arquivo" um novo Projeto. Ao abrir uma janela selecionaremos a opção de "Version Control"
+Agora vamos abrir o RStudio. Nesse passo iremos informar ao Git via RStudio para onde ele deve olhar remotamente, ou seja, qual a pasta local que deve estar conectada com o repositório remoto. Primeiro selecionamos em "Arquivo" um novo Projeto. Ao abrir uma janela selecionaremos a opção de "Version Control"
 
 ![RStudio is watching you](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Git3_Rstudio.png)
 
-Após isso informamos o endereço do repositório remoto, ou seja, aquele que criamos no Github.
+Após isso informamos o endereço do repositório remoto (aquele endereço https que copiamos no Github) e colamos ele no campo *Repository URL*. Automaticamente o campo Project directory name será preechido e você deve apenas escolher o lugar do seu computador que essa pasta será criada.
 
 ![Endereço do seu GitHub](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Git4_https.png)
-Pronto, neste momento a pasta que acabou de ser criada no seu computador está sendo olhada pelo Git e hospedada remotamente no GitHub. Qualquer modificação que nela fizer será monitorado pelo Git. Essa é o resultado da mistura do R + Git + RStudio
+Pronto, neste momento a pasta que acabou de ser criada no seu computador está sendo observada pelo Git e hospedada remotamente no GitHub. Qualquer modificação que nela fizer será monitorada. Esse é o resultado da mistura do R + Git + RStudio
 
-![](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Fusao_Git_R.png)
-
-# Pacotes que utilizaremos ao longo desse curso
-
-Durante esse curso utilizaremos alguns pacotes em R para nos auxiliar a garantir a organização e reprodutibilidade dos nossos dados. Se você não os tem instalado no seu computador sugiro que os instale antes da aula. Para instalar ou atualizar use:
-
-```{r echo=TRUE, eval=FALSE}
-packages <- c("devtools", "rmarkdown", "here", "usethis")
-lapply(packages, function(x) install.packages(x))
-
-```
-
+![Fusão](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Fusao_Git_R.png)
 
 # Git dictionary
 
