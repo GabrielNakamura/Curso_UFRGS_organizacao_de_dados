@@ -16,3 +16,5 @@ Modifica, salva, faz commit, faz pull, faz push e voilá, está completo o ciclo
 Todas essas funções podem ser feitas através do RStudio, mas também podemos fazer através da linha de comando (também com o RStudio através da aba *Terminal*).
 
 
+**Em construção**
+
