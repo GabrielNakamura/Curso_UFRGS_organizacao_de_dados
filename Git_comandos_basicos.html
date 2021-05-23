@@ -326,12 +326,15 @@ $(document).ready(function () {
 <h2>Fiz um commit, mas não deveria</h2>
 <p>O Git nos permite voltar no tempo de uma maneira muito eficiente</p>
 </div>
-<div id="ignorando-caminhos---o-.gitignore" class="section level2">
-<h2>Ignorando caminhos - o .gitignore</h2>
-<p><a href="http://git-scm.com/docs/gitignore">Referência</a></p>
 </div>
+<div id="ignorando-caminhos---o-.gitignore" class="section level1">
+<h1>Ignorando caminhos - o .gitignore</h1>
+<p>As vezes queremos que alguns documentos não sejam carregados na nuvem, por exemplo, aquele arquivo Word não finalizado e que você não quer tornar público ainda. Para isso podemos usar um arquivo com um nome bem intuitivo, na raiz do seu projeto, o <strong>.gitignore</strong></p>
+<p>Este arquivo, quando presente na raiz do projeto observado pelo Git, é primeiro lido e os padrões de extensões ou pastas nele presente são ignorados pelo Git, ou seja, eles não vão ser observados. Qualquer mudança feita neles não vai ser monitorada, logo, você não vai precisar subi-los para o GitHub. Por exemplo, um projeto onde quero ignorar arquivos de extensão <code>.Rproj</code>, <code>.Rhistory</code>, <code>.RData</code> e uma pasta inteira de Figuras (Figs_presentation/), irá apresentar o seguinte formato:</p>
+<p><img src="Gitignore_schme.png" alt="Ignorando arquivos - O .gitignore trata-se de um simples arquivo de texto" /> Para informações detalhadas de como usar esse recurso acesse essa <a href="http://git-scm.com/docs/gitignore">Referência</a></p>
 <div id="arquivos-grandes---git-lfs" class="section level2">
 <h2>Arquivos grandes - Git LFS</h2>
+<p>O GitHub não foi projetado pensando em hospedar arquivos que não são binários, por exemplo, Figuras em extensões como .png, .tiff, .jpeg. Sua principal função sempre foi, e ainda é, hospedar códigos em arquivos simples de texto, tal como nossos scripts em R. Porém, em alguns momentos não tem como fugir, e alguns arquivos pesados (&gt;25Gb), como imagens de satélite, ou de elevado processamento, precisam ser hospedadas no nosso repositório, como fazemos? Para resolver isso precisamos utilizar uma extensão do Git chamado Git LFS (Large File Storage). Essa extenção funciona como um pacote, ela permite que o Git faça coisas que não estão na sua programação básica.</p>
 <p><a href="https://qifengzhou.github.io/2018/04/29/Upload%20files%20bigger%20than%2025%20MB%20to%20Github/">Referência</a></p>
 <p><strong>Em construção</strong> <img src="https://media.giphy.com/media/BpGWitbFZflfSUYuZ9/giphy.gif" /></p>
 </div>

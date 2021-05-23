@@ -14,7 +14,7 @@ html_document:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, fig.align = "center")
 ```
 
 Nesta primeira seção irei apresentar as principais ferramentas que utilizaremos para nos ajudar na organização de dados. Estas ferramenta irão auxiliar desde a organização local de seus dados até a disponibilização destes dados em plataformas de acesso aberto. Várias delas já devem ser velhas conhecidas por vocês, por exemplo, o RStudio, então dispensam maiores apresentações. Por isso, grande parte deste documento vai tratar de uma ferramenta até bem conhecida pelo nome, mas que pra muita gente pode parecer coisa de outro mundo: o **Git**. Vocês verão que conhecem mais dele do que imaginam, e que muitas das funções que ele possibilita realizar nós fazemos em nosso dia-a-dia através de outros aplicativos, porém, espero conseguir mostrar o quão o **Git** é mais eficiente.
