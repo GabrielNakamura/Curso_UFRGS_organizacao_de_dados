@@ -284,9 +284,53 @@ $(document).ready(function () {
 
 <div id="em-cima-em-baixo-push-e-vai" class="section level1">
 <h1>Em cima, em baixo, <em>Push</em> e vai</h1>
-<p>Modifica, salva, faz commit, faz pull, faz push e voilá, está completo o ciclo básico de operações necessárias para o controle de versão do seu projeto. Apesar de ter nomes próprios dentro do mundo do versionamento, fazemos essas ações no nosso dia-a-dia. A diferença é que o Git nos permite um versionamento muito mais sistematizado e organizado. Cada vez que um arquivo dentro de uma pasta observada pelo Git é modificada ele irá aparecer na aba <em>Git</em> do seu RStudio. Esse arquivo precisa ser “stagged”, para que o <em>commit</em> possa ser feito, e então possamos fazer o <em>push</em>. Essa frase pode parecer estranha em um primeiro momento, mas traduzindo. Primeiro precisamos selecionar o arquivo (stage), nomear ele com uma indicação do que foi modificado em relação a versão anterior (commit) e então sincronizá-lo com o repositório remoto (push).</p>
-<p>Todas essas funções podem ser feitas através do RStudio, mas também podemos fazer através da linha de comando (também com o RStudio através da aba <em>Terminal</em>).</p>
-<p><strong>Em construção</strong></p>
+<p>Abre o computador, trabalha, modifica arquivo, salva o arquivo com um nome diferente do anterior, salva e atualiza a nuvem. Basicamente é isso que fazemos todos os dias, independente se você trabalha com taxonomia de bactérias ou com métodos quantitativos para taxonomia de bactérias. Basicamente, essa é a rotina de quem trabalha na frente do computador.</p>
+<p>Todos esses passos são reproduzidos pelo Git de uma maneira muito mais eficiente, e ela pode ser resumida através dessas palavras: pull, diff, commit, push. Pronto, está completo o ciclo básico de operações necessárias para o controle eficiente de versões do seu projeto.</p>
+<p>Apesar dessas ações apresentarem nomes próprios dentro do mundo do versionamento, quero que vejam que elas são bastante familiares, ou seja, fazemos operações de controle de versões quase todos os dias, porém de uma maneira menos eficiente e com menor controle. A grande diferença do uso de um sistema próprio de controle de versão, como o Git, é que ele permite que todos os passos destacados acima estejam sob o nosso controle, de maneira sistematizada e organizada. Em resumo, o Git não deixará você fazer nada que leve a uma cadeia de ações que leve o seu projeto ao caos como o dessa pasta, velha conhecida nossa, e que agora está fadada a ficar no passado:</p>
+<div class="figure">
+<img src="repo_trash.png" alt="" />
+<p class="caption">Um diretório fadado a ficar no passado.</p>
+</div>
+<p>Todos os documentos que aparecerão nessa aba são documentos que vivem na pasta monitorada pelo Git (<a href="https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Intro_Git.html">aprendemos como fazer isso na aula de introdução ao Git</a>) e que foram modificados. A partir desse monitoramento é que começa nossa via sacra do versionamento.</p>
+<div id="a-via-sacra-do-versionamento" class="section level2">
+<h2>A via sacra do versionamento</h2>
+<p>Como já comentado na <a href="https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Intro_Git.html">introdução ao Git</a>, cada vez que um arquivo dentro de uma pasta observada pelo Git é modificada ele irá aparecer na aba <em>Git</em> do seu RStudio. A aba do Git no RStudio pode ser acessada facilmente, como mostrado nessa figura:</p>
+<div class="figure">
+<img src="Figs_presentation/Git_RStudio.png" alt="" />
+<p class="caption">O fantástico Git e onde habita</p>
+</div>
+<p>Precisamos aprender, basicamente, três funções básicas do Git para que possamos realizar o controle de versões em nossas pastas, <a href="https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Organizacao_dir_local.html">que nesse momento devem estar bem organizadas</a>. São elas:</p>
+<p>1 - <strong>Pull</strong> atualiza o seu repositório local com o que tem no seu repositório remoto (GitHub), ou seja, sincronizasua a pasta presente no seu computador com tudo que tem na nuvem;</p>
+<p>Antes de começar a fazer qualquer modificação nos nossos arquivos a primeira coisa a ser feita é sincronizar nosso repositório remoto com nosso repositório local. Para isso acessaremos o Git a partir do RStudio presente na nossa pasta do projeto que estamos trabalhando, como mostrado na figura a seguir:</p>
+<div class="figure">
+<img src="Figs_presentation/Aba_Git_Pull.png" alt="" />
+<p class="caption">Git - fazendo Pull</p>
+</div>
+<p>2 - <strong>Stage</strong> qualquer mudança realizada deve antes ser observada com cautela no nosso GitClient (RStudio), para que possasmos verificar as diferenças (diffs na linguagem do versionamento) entre a versão anterior e a atual, após as modificações realizadas. Fazer um stage significa selecionar o arquivo que fizemos as modificações, tal como mostrado na figura seguinte com um arquivo desse site que foi modificado em algum momento:</p>
+<div class="figure">
+<img src="Figs_presentation/Git_stage.png" alt="" />
+<p class="caption">Git - staged um arquivo</p>
+</div>
+<p>Ao fazermos isso podemos clicar na opção <em>Diff</em>, que irá abrir uma nova aba mostrando as diferenças entre a versão antiga e a nova versão do documento modificado</p>
+<p><img src="Figs_presentation/Git_diff.png" alt="Git - olhando as diffs" /> Olhar as diferenças é extremamente importante, pois são elas que possibilitarão indicar para o Git qual o commit que será feito, ou seja, dizer para o git o que foi modificado.</p>
+<p>3 - <strong>Commit</strong> qualquer mudança realizada em qualquer arquivo, desde a menor vírgula até a mudança completa de seu repositório, deve ser acompanhada de um comentário breve destacando o que foi modificado, isso é o commit. Em outras palavras, é uma mensagem de texto para você mesmo, ou seus colaboradores, destacando o que foi modificado no repositório local observado pelo Git. O ideal é que o commit seja uma mensagem informativa e curta, não ultrapassando 40 palavras;</p>
+<p><img src="Figs_presentation/Git_commit.png" alt="Git - commit, uma mensagem informativa" /> <strong>Importante</strong> Evite fazer commits que não sejam informativos, por exemplo, fazer commits só por fazer, tente nunca fazer isso. Mensagens como <em>modificação do arquivo</em>, <em>novo arquivo</em>, <em>arquivo_V1_novo</em>, <em>blablabla</em>, fazem com que o potencial de controle que o Git nos oferece perder completamente o sentido.</p>
+<p>4 - <strong>Push</strong> as modificações realizadas em seus arquivos estão só na sua máquina, ou seja, o repositório remoto (seu GitHub) está desatualizado. Para atualizá-lo devemos fazer um <em>push</em>, que nada mais é que sincronizar o repositório local com o repositório remoto.</p>
+<p>Esta é a sequência básica para que possamos realizar um versionamento eficiente em nosso projeto. De certa forma a sequência é simples, e toda ela pode ser feita usando os recursos da interface que o RStudio nos oferece. Porém, alguns probleminhas podem surgir no meio dessas etapas descritas, por exemplo:</p>
+</div>
+<div id="fiz-um-commit-mas-não-deveria" class="section level2">
+<h2>Fiz um commit, mas não deveria</h2>
+<p>O Git nos permite voltar no tempo de uma maneira muito eficiente, basta acessarmos a ## Voltando no tempo</p>
+</div>
+<div id="ignorando-caminhos---o-.gitignore" class="section level2">
+<h2>Ignorando caminhos - o .gitignore</h2>
+<p><a href="http://git-scm.com/docs/gitignore">Referência</a></p>
+</div>
+<div id="arquivos-grandes---git-lfs" class="section level2">
+<h2>Arquivos grandes - Git LFS</h2>
+<p><a href="https://qifengzhou.github.io/2018/04/29/Upload%20files%20bigger%20than%2025%20MB%20to%20Github/">Referência</a></p>
+<p><strong>Em construção</strong> <img src="Figs_presentation/Em_construcao.gif" alt="Git - commit, uma mensagem informativa" /></p>
+</div>
 </div>
 
 

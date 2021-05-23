@@ -127,11 +127,11 @@ Após isso informamos o endereço do repositório remoto (aquele endereço https
 ![Endereço do seu GitHub](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Git4_https.png)
 Pronto, neste momento a pasta que acabou de ser criada no seu computador está sendo observada pelo Git e hospedada remotamente no GitHub. Qualquer modificação que nela fizer será monitorada. Esse é o resultado da mistura do R + Git + RStudio
 
-![Fusão](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Fusao_Git_R.png)
+![](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Fusao_Git_R.png)
 
 Se tudo correu bem, parabéns, agora seu RStudio está conectado ao Git e GitHub, e você está pronto para produzir projetos organizados e reprodutíveis.
 
-![Fusão](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Figs_presentation/Yes_Git_Intro.gif)
+![](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Figs_presentation/Yes_Git_Intro.gif)
 
 # Git dictionary
 
