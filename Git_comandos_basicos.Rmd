@@ -58,9 +58,7 @@ Esta é a sequência básica para que possamos realizar um versionamento eficien
 
 ## Fiz um commit, mas não deveria
 
-O Git nos permite voltar no tempo de uma maneira muito eficiente, basta acessarmos a 
-## Voltando no tempo
-
+O Git nos permite voltar no tempo de uma maneira muito eficiente
 
 ## Ignorando caminhos - o .gitignore
 
@@ -73,5 +71,6 @@ O Git nos permite voltar no tempo de uma maneira muito eficiente, basta acessarm
 
 
 **Em construção**
-![](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Figs_presentation/Em_construcao.gif)
+<img src="/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Figs_presentation/Em_construcao.gif">
+
 

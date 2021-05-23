@@ -296,31 +296,35 @@ $(document).ready(function () {
 <h2>A via sacra do versionamento</h2>
 <p>Como já comentado na <a href="https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Intro_Git.html">introdução ao Git</a>, cada vez que um arquivo dentro de uma pasta observada pelo Git é modificada ele irá aparecer na aba <em>Git</em> do seu RStudio. A aba do Git no RStudio pode ser acessada facilmente, como mostrado nessa figura:</p>
 <div class="figure">
-<img src="Figs_presentation/Git_RStudio.png" alt="" />
+<img src="Git_RStudio.png" alt="" />
 <p class="caption">O fantástico Git e onde habita</p>
 </div>
 <p>Precisamos aprender, basicamente, três funções básicas do Git para que possamos realizar o controle de versões em nossas pastas, <a href="https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Organizacao_dir_local.html">que nesse momento devem estar bem organizadas</a>. São elas:</p>
 <p>1 - <strong>Pull</strong> atualiza o seu repositório local com o que tem no seu repositório remoto (GitHub), ou seja, sincronizasua a pasta presente no seu computador com tudo que tem na nuvem;</p>
 <p>Antes de começar a fazer qualquer modificação nos nossos arquivos a primeira coisa a ser feita é sincronizar nosso repositório remoto com nosso repositório local. Para isso acessaremos o Git a partir do RStudio presente na nossa pasta do projeto que estamos trabalhando, como mostrado na figura a seguir:</p>
 <div class="figure">
-<img src="Figs_presentation/Aba_Git_Pull.png" alt="" />
+<img src="Aba_Git_Pull.png" alt="" />
 <p class="caption">Git - fazendo Pull</p>
 </div>
 <p>2 - <strong>Stage</strong> qualquer mudança realizada deve antes ser observada com cautela no nosso GitClient (RStudio), para que possasmos verificar as diferenças (diffs na linguagem do versionamento) entre a versão anterior e a atual, após as modificações realizadas. Fazer um stage significa selecionar o arquivo que fizemos as modificações, tal como mostrado na figura seguinte com um arquivo desse site que foi modificado em algum momento:</p>
 <div class="figure">
-<img src="Figs_presentation/Git_stage.png" alt="" />
+<img src="Git_stage.png" alt="" />
 <p class="caption">Git - staged um arquivo</p>
 </div>
 <p>Ao fazermos isso podemos clicar na opção <em>Diff</em>, que irá abrir uma nova aba mostrando as diferenças entre a versão antiga e a nova versão do documento modificado</p>
-<p><img src="Figs_presentation/Git_diff.png" alt="Git - olhando as diffs" /> Olhar as diferenças é extremamente importante, pois são elas que possibilitarão indicar para o Git qual o commit que será feito, ou seja, dizer para o git o que foi modificado.</p>
+<p><img src="Git_diff.png" alt="Git - olhando as diffs" /> Olhar as diferenças é extremamente importante, pois são elas que possibilitarão indicar para o Git qual o commit que será feito, ou seja, dizer para o git o que foi modificado.</p>
 <p>3 - <strong>Commit</strong> qualquer mudança realizada em qualquer arquivo, desde a menor vírgula até a mudança completa de seu repositório, deve ser acompanhada de um comentário breve destacando o que foi modificado, isso é o commit. Em outras palavras, é uma mensagem de texto para você mesmo, ou seus colaboradores, destacando o que foi modificado no repositório local observado pelo Git. O ideal é que o commit seja uma mensagem informativa e curta, não ultrapassando 40 palavras;</p>
-<p><img src="Figs_presentation/Git_commit.png" alt="Git - commit, uma mensagem informativa" /> <strong>Importante</strong> Evite fazer commits que não sejam informativos, por exemplo, fazer commits só por fazer, tente nunca fazer isso. Mensagens como <em>modificação do arquivo</em>, <em>novo arquivo</em>, <em>arquivo_V1_novo</em>, <em>blablabla</em>, fazem com que o potencial de controle que o Git nos oferece perder completamente o sentido.</p>
+<p><img src="Git_commit.png" alt="Git - commit, uma mensagem informativa" /> <strong>Importante</strong> Evite fazer commits que não sejam informativos, por exemplo, fazer commits só por fazer, tente nunca fazer isso. Mensagens como <em>modificação do arquivo</em>, <em>novo arquivo</em>, <em>arquivo_V1_novo</em>, <em>blablabla</em>, fazem com que o potencial de controle que o Git nos oferece perder completamente o sentido.</p>
 <p>4 - <strong>Push</strong> as modificações realizadas em seus arquivos estão só na sua máquina, ou seja, o repositório remoto (seu GitHub) está desatualizado. Para atualizá-lo devemos fazer um <em>push</em>, que nada mais é que sincronizar o repositório local com o repositório remoto.</p>
+<div class="figure">
+<img src="Git_pull.png" alt="" />
+<p class="caption">Git - push, trabalho seguro no GitHub</p>
+</div>
 <p>Esta é a sequência básica para que possamos realizar um versionamento eficiente em nosso projeto. De certa forma a sequência é simples, e toda ela pode ser feita usando os recursos da interface que o RStudio nos oferece. Porém, alguns probleminhas podem surgir no meio dessas etapas descritas, por exemplo:</p>
 </div>
 <div id="fiz-um-commit-mas-não-deveria" class="section level2">
 <h2>Fiz um commit, mas não deveria</h2>
-<p>O Git nos permite voltar no tempo de uma maneira muito eficiente, basta acessarmos a ## Voltando no tempo</p>
+<p>O Git nos permite voltar no tempo de uma maneira muito eficiente</p>
 </div>
 <div id="ignorando-caminhos---o-.gitignore" class="section level2">
 <h2>Ignorando caminhos - o .gitignore</h2>
@@ -329,7 +333,7 @@ $(document).ready(function () {
 <div id="arquivos-grandes---git-lfs" class="section level2">
 <h2>Arquivos grandes - Git LFS</h2>
 <p><a href="https://qifengzhou.github.io/2018/04/29/Upload%20files%20bigger%20than%2025%20MB%20to%20Github/">Referência</a></p>
-<p><strong>Em construção</strong> <img src="Figs_presentation/Em_construcao.gif" alt="Git - commit, uma mensagem informativa" /></p>
+<p><strong>Em construção</strong> <img src="/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Figs_presentation/Em_construcao.gif"></p>
 </div>
 </div>
 
