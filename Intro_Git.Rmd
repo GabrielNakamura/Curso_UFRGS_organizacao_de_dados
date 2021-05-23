@@ -129,6 +129,10 @@ Pronto, neste momento a pasta que acabou de ser criada no seu computador está s
 
 ![Fusão](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Fusao_Git_R.png)
 
+Se tudo correu bem, parabéns, agora seu RStudio está conectado ao Git e GitHub, e você está pronto para produzir projetos organizados e reprodutíveis.
+
+![Fusão](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Figs_presentation/Yes_Git_Intro.gif)
+
 # Git dictionary
 
 Este glossário visa listar as palavras comumente usadas na linguagem de controle de versão, atribuindo a elas seus respectivos significados em uma linguagem acessível para nós, ecólogos/zoólogos/botânicos, que visamos nos aventurar no mundo do controle de versões
