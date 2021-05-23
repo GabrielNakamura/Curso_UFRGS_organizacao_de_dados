@@ -19,24 +19,37 @@ Apesar dessas ações apresentarem nomes próprios dentro do mundo do versioname
 
 ![Um diretório fadado a ficar no passado.](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/repo_trash.png)
 
-Antes de começar a fazer qualquer modificação nos nossos arquivos a primeira coisa a ser feita é sincronizar nosso repositório remoto com nosso repositório local. Para isso acessaremos o Git a partir do RStudio presente na nossa pasta do projeto que estamos trabalhando, como mostrado na figura a seguir:
 
-![Git - fazendo Pull](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Figs_presentation/Aba_Git_Pull.png)
 Todos os documentos que aparecerão nessa aba são documentos que vivem na pasta monitorada pelo Git ([aprendemos como fazer isso na aula de introdução ao Git](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Intro_Git.html)) e que foram modificados. A partir desse monitoramento é que começa nossa via sacra do versionamento.
 
 ## A via sacra do versionamento
 
-Como já comentado na [introdução ao Git](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Intro_Git.html), cada vez que um arquivo dentro de uma pasta observada pelo Git é modificada ele irá aparecer na aba *Git* do seu RStudio. Como mostrado nessa figura:
+Como já comentado na [introdução ao Git](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Intro_Git.html), cada vez que um arquivo dentro de uma pasta observada pelo Git é modificada ele irá aparecer na aba *Git* do seu RStudio. A aba do Git no RStudio pode ser acessada facilmente, como mostrado nessa figura:
 
-![Git - o olho que tudo vê](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Figs_presentation/Aba_Git_Rstudio.png)
+![O fantástico Git e onde habita](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Figs_presentation/Git_RStudio.png)
 
 Precisamos aprender, basicamente, três funções básicas do Git para que possamos realizar o controle de versões em nossas pastas, [que nesse momento devem estar bem organizadas](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Organizacao_dir_local.html). São elas:
 
 1 - **Pull** atualiza o seu repositório local com o que tem no seu repositório remoto (GitHub), ou seja, sincronizasua a pasta presente no seu computador com tudo que tem na nuvem;
 
-2 - **Stage** ao selecionarmos os arquivos que fizemos as modificações devem ser olhados com cautela no nosso GitClient (RStudio), para que possasmos verificar as diferenças (diffs na linguagem do versionamento) entre a versão anterior e a atual, após as modificações realizadas;
+Antes de começar a fazer qualquer modificação nos nossos arquivos a primeira coisa a ser feita é sincronizar nosso repositório remoto com nosso repositório local. Para isso acessaremos o Git a partir do RStudio presente na nossa pasta do projeto que estamos trabalhando, como mostrado na figura a seguir:
+
+![Git - fazendo Pull](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Figs_presentation/Aba_Git_Pull.png)
+
+2 - **Stage** qualquer mudança realizada deve antes ser observada com cautela no nosso GitClient (RStudio), para que possasmos verificar as diferenças (diffs na linguagem do versionamento) entre a versão anterior e a atual, após as modificações realizadas. Fazer um stage significa selecionar o arquivo que fizemos as modificações, tal como mostrado na figura seguinte com um arquivo desse site que foi modificado em algum momento:
+
+![Git - staged um arquivo](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Figs_presentation/Git_stage.png)
+
+Ao fazermos isso podemos clicar na opção *Diff*, que irá abrir uma nova aba mostrando as diferenças entre a versão antiga e a nova versão do documento modificado
+
+![Git - olhando as diffs](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Figs_presentation/Git_diff.png)
+Olhar as diferenças é extremamente importante, pois são elas que possibilitarão indicar para o Git qual o commit que será feito, ou seja, dizer para o git o que foi modificado.
 
 3 - **Commit** qualquer mudança realizada em qualquer arquivo, desde a menor vírgula até a mudança completa de seu repositório, deve ser acompanhada de um comentário breve destacando o que foi modificado, isso é o commit. Em outras palavras, é uma mensagem de texto para você mesmo, ou seus colaboradores, destacando o que foi modificado no repositório local observado pelo Git. O ideal é que o commit seja uma mensagem informativa e curta, não ultrapassando 40 palavras;
+
+![Git - commit, uma mensagem informativa](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Figs_presentation/Git_commit.png)
+**Importante** Evite fazer commits que não sejam informativos, por exemplo, fazer commits só por fazer, tente nunca fazer isso. Mensagens como *modificação do arquivo*, *novo arquivo*, *arquivo_V1_novo*, *blablabla*, fazem com que o potencial de controle que o Git nos oferece perder completamente o sentido.
+
 
 4 - **Push** as modificações realizadas em seus arquivos estão só na sua máquina, ou seja, o repositório remoto (seu GitHub) está desatualizado. Para atualizá-lo devemos fazer um *push*, que nada mais é que sincronizar o repositório local com o repositório remoto.
 
@@ -59,4 +72,5 @@ O Git nos permite voltar no tempo de uma maneira muito eficiente, basta acessarm
 
 
 **Em construção**
+![Git - commit, uma mensagem informativa](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Figs_presentation/Em_construcao.gif)
 
