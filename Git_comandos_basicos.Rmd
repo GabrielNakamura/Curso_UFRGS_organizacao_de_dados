@@ -19,16 +19,18 @@ Apesar dessas ações apresentarem nomes próprios dentro do mundo do versioname
 
 ![Um diretório fadado a ficar no passado.](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/repo_trash.png)
 
+Antes de começar a fazer qualquer modificação nos nossos arquivos a primeira coisa a ser feita é sincronizar nosso repositório remoto com nosso repositório local. Para isso acessaremos o Git a partir do RStudio presente na nossa pasta do projeto que estamos trabalhando, como mostrado na figura a seguir:
 
-
-
-Cada vez que um arquivo dentro de uma pasta observada pelo Git é modificada ele irá aparecer na aba *Git* do seu RStudio. Esse arquivo precisa ser "stagged", para que o *commit* possa ser feito, e então possamos fazer o *push*. Essa frase pode parecer estranha em um primeiro momento, mas traduzindo. Primeiro precisamos selecionar o arquivo (stage), nomear ele com uma indicação do que foi modificado em relação a versão anterior (commit) e então sincronizá-lo com o repositório remoto (push).
-
-Todas essas funções podem ser feitas através do RStudio, mas também podemos fazer através da linha de comando (também com o RStudio através da aba *Terminal*).
+![Git - fazendo Pull](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Figs_presentation/Aba_Git_Pull.png)
+Todos os documentos que aparecerão nessa aba são documentos que vivem na pasta monitorada pelo Git ([aprendemos como fazer isso na aula de introdução ao Git](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Intro_Git.html)) e que foram modificados. A partir desse monitoramento é que começa nossa via sacra do versionamento.
 
 ## A via sacra do versionamento
 
-Precisamos aprender, basicamente, três funções básicas do Git para que possamos realizar o controle de versões em nossas pastas, que nesse momento devem estar bem organizadas. São elas:
+Como já comentado na [introdução ao Git](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Intro_Git.html), cada vez que um arquivo dentro de uma pasta observada pelo Git é modificada ele irá aparecer na aba *Git* do seu RStudio. Como mostrado nessa figura:
+
+![Git - o olho que tudo vê](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Figs_presentation/Aba_Git_Rstudio.png)
+
+Precisamos aprender, basicamente, três funções básicas do Git para que possamos realizar o controle de versões em nossas pastas, [que nesse momento devem estar bem organizadas](https://gabrielnakamura.github.io/Curso_UFRGS_organizacao_de_dados/Organizacao_dir_local.html). São elas:
 
 1 - **Pull** atualiza o seu repositório local com o que tem no seu repositório remoto (GitHub), ou seja, sincronizasua a pasta presente no seu computador com tudo que tem na nuvem;
 
