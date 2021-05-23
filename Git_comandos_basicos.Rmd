@@ -71,6 +71,5 @@ O Git nos permite voltar no tempo de uma maneira muito eficiente
 
 
 **Em construção**
-<img src="/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Figs_presentation/Em_construcao.gif">
-
+![](https://media.giphy.com/media/BpGWitbFZflfSUYuZ9/giphy.gif)
 
