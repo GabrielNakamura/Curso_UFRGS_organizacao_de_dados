@@ -1,0 +1,43 @@
+---
+title: "Git a partir da linha de comando"
+author: "Gabriel Nakamura"
+date: "5/24/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Do clica-clica para o digita-digita
+
+Para iniciar um repositório local observado pelo git abra o terminal a partir da pasta que quer que o git observe usando a linha de comando. No terminal digite
+```{r echo=TRUE, eval=FALSE}
+git init
+```
+
+Para conectar um repositório local ao remoto
+```{r echo=TRUE, eval=FALSE}
+git remote add origin https://github.com/yourUserName/yourRepoName.git
+git push -u origin master
+```
+
+
+Para clonar um repositório local
+```{r echo=TRUE, eval=FALSE}
+git clone https://gitlab.com/gitlab-tests/sample-project.git
+```
+
+Para preparar o arquivo para fazer um commit
+
+```{r echo=TRUE, eval=FALSE}
+git add <file-name OR folder-name>
+git commit -m "COMMENT TO DESCRIBE THE INTENTION OF THE COMMIT"
+```
+
+[Referência](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
+
+
+
+
