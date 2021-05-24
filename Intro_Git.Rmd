@@ -62,7 +62,8 @@ Em seguida configure o git usando a linha de comando seguinte:
 
 ```{r echo=TRUE, eval=FALSE}
 git --version
-git config
+git config --global user.name "Your name here"
+git config --global user.email "your_email@example.com"
 ```
 
 Voilá, aceite as configurações e clique em instalar
