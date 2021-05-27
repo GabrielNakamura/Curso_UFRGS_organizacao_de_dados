@@ -17,4 +17,5 @@ navbar:
       href: Organizacao_script.html
     - text: "Git - comandos básicos"
       href: Git_comandos_basicos.html
-      
+    - text: "Git - linha de comando"
+      href: Locar_for_remote.html
