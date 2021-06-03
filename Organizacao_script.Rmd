@@ -166,5 +166,5 @@ Busque sempre estruturar o seu script, isso quer dizer separar suas partes. Da m
 
 Nomeamos coisas para que possamos organizá-las de alguma maneira. Portanto, de nada adianta um script bem organizado com um nome completamente contra-intuitivo, ou que não faça sentido algum, dar nome é coisa séria, e, como todos os outros tópicos, podemos seguir algumas regrinhas, mas o mais importante de tudo é que os nossos padrões sejam consistentes e explicados (por exemplo num README).
 
-Jenny Bryan nos fornece aulgumas regras que auxiliam a nomeação de scripts em R e pode ser acessado [aqui](https://github.com/GabrielNakamura/Curso_UFRGS_organizacao_de_dados/blob/6158cc12c07ea8c56e9a0e8f03f43c9241076006/naming-slides.pdf).
+Jenny Bryan nos fornece aulgumas regras que auxiliam a nomeação de scripts em R e pode ser acessado [aqui](https://github.com/GabrielNakamura/Curso_UFRGS_organizacao_de_dados/blob/6158cc12c07ea8c56e9a0e8f03f43c9241076006/naming-slides.pdf). Este é o documento contempla todas as regras básicas para nomeação de arquivos, recomendo a leitura para guiar suas estratégias de nomeação
 

@@ -285,19 +285,24 @@ $(document).ready(function () {
 </div>
 
 
+<p>Durante o curso vimos que as funções básicas necessárias para um controle de versões efetivas para garantir um projeto científico reprodutível, podem ser realizadas através do RStudio, quando conectado com um repositório local observado pelo git e com o GitHub. Porém, vimos também que algumas coisas não são possíveis de se fazer apenas através dos botões que o RStudio nos apresenta, mas que são possíveis a partir da linha de comando, utilizando algumas poucas funções. Nesta seção apresentarei algumas funções básicas que são úteis conhecermos para que possamos realizar ações que não são possíveis serem realizadas através do RStudio.</p>
 <div id="do-clica-clica-para-o-digita-digita" class="section level1">
 <h1>Do clica-clica para o digita-digita</h1>
-<p>Para iniciar um repositório local observado pelo git abra o terminal a partir da pasta que quer que o git observe usando a linha de comando. No terminal digite</p>
+<p><em>Como podemos fazer o caminho inverso para inicialização de um repositório, ou seja, a partir de um diretório local, já organizado, como podemos fazer com que ele seja observado pelo git e esteja conectado pelo com o GitHub (local -&gt; remoto ao invés de inciar remoto -&gt; local)? </em></p>
+<p>Para fazer com que um repositório local seja observado pelo git abra o terminal a partir da pasta que você deseja que o git observe, usando a linha de comando. No terminal digite:</p>
 <pre class="r"><code>git init</code></pre>
-<p>Para conectar um repositório local ao remoto</p>
+<p>Em seguida conecte o diretório local ao remoto. A prieira linha informa o caminho https do seu repositório remoto, a segunda faz um push do seu diretório local (origin) para o remoto (master).</p>
 <pre class="r"><code>git remote add origin https://github.com/yourUserName/yourRepoName.git
 git push -u origin master</code></pre>
-<p>Para clonar um repositório local</p>
+<p><em>Como clonamos um repositório remoto a partir da linha de comando?</em> Para clonar um repositório remoto no seu computador usando a linha de comando digite:</p>
 <pre class="r"><code>git clone https://gitlab.com/gitlab-tests/sample-project.git</code></pre>
-<p>Para preparar o arquivo para fazer um commit</p>
+<p><em>Como fazemos o commit de um arquivo através da linha de comando?</em></p>
 <pre class="r"><code>git add &lt;file-name OR folder-name&gt;
-git commit -m &quot;COMMENT TO DESCRIBE THE INTENTION OF THE COMMIT&quot;</code></pre>
-<p><a href="https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html">Referência</a></p>
+git commit -m &quot;Um comentário para descrever a modificação neste arquivo&quot;</code></pre>
+<p>A primeira linha adiciona o arquivo que você deseja fazer o commit, a segunda faz o commit com uma mensagem entre aspas.</p>
+<p><em>Quando estamos trabalhando em conjunto num mesmo repositório, mas em branches distintos, como fazemos para copiar um arquivo de um branch e jogar para o outro branch?</em></p>
+<p>Suponhamos que você esteja no branch master (que vai ser main em alguns casos), e deseja copiar um arquivo que só tem no branch do seu colaborador (apenas para exemplificar vamos chamar o branch de outro_branch). Primeiro precisamos copiar o arquivo desejado do branch do colaborador</p>
+<pre class="r"><code>git checkout outro_branch Nome_do_aruivo.extencao</code></pre>
 </div>
 
 

@@ -336,7 +336,19 @@ git config --global user.email &quot;your_email@example.com&quot;</code></pre>
 use_git_config(user.name = &quot;SeuNomeDeUsuario&quot;, user.email = &quot;seuMail@example.br&quot;)</code></pre>
 <p>Lembre de substituir os campos que aparecerão no console do seu R com suas informações.</p>
 <p>Uma outra opção é não fazer nada disso, pois em muitos computadores o RStudio já irá reconhecer automaticamente o Git instalado no seu computador, desta maneira, a primeira vez que subir (push) algo para o GitHub você deverá realizar a sua autenticação, assim o Git saberá com quem ele está “falando”.</p>
-<p><strong>Neste momento já digo, calma, a maior parte das coisas que faremos nesse curso não necessita da famigerada e temida linha de comando do seu sistema operacional. Em alguns momentos vamos usá-la apenas para nos certificarmos que o Git consegue se comunicar com o GitHub</strong></p>
+<p>Durante nossas aulas prensenciais, percebemos que muitos de nós tivemos problemas associados ao registros de nossas credenciais do GitHub no cache, na prática, isso fazia com que qualquer pull ou push que fosse realizado requerisse as informações de login duas vezes seguidas (uma pelo GitHub e outra pelo RStudio). Achamos a solução para esse problema utilizando a autenticação através do <em>PAT</em> (Personal Access Token). O PAT nada mais é que uma chave aleatória gerada automaticamente pelo GitHub que irá servir como a sua senha para realizar ações de pull e push, ao cadastrarmos o PAT precisamos fazer isso só uma vez, a menos que você gere outro PAT para sua conta do GitHub. A vantagem de utilizar esse tipo de autenticação está associada a segurança de suas informações, já que você não vai precisar informar mais o seu nome de usuário e senha diretamente para um programa. Então, se você está tendo esse problema faça os seguintes passos:</p>
+<p>Digite a linha de código no seu console do R:</p>
+<pre class="r"><code>library(usethis)
+create_github_token()</code></pre>
+<p>Isso abrirá uma guia no seu navegador para que você gere um token, tal como mostrado na imagem abaixo</p>
+<div class="figure">
+<img src="PAT_Github.png" alt="" />
+<p class="caption">Gerando um Token</p>
+</div>
+<p>Após gerado, guarde esse token com carinho, pois ele vai ser sua nova senha de entrada para o GitHub via RStudio, quando for requerido. Para registrar esse token gerado faça o seguinte:</p>
+<pre class="r"><code>library(gitcreds)
+gitcreds_set()</code></pre>
+<p>No console aparecerá a mensagem para digitar o token, faça isso seu problema de autenticação estará resolvido.</p>
 </div>
 <div id="conectando-git-rstudio-e-github" class="section level2">
 <h2>Conectando Git, RStudio e Github</h2>

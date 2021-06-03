@@ -19,3 +19,5 @@ navbar:
       href: Git_comandos_basicos.html
     - text: "Git - linha de comando"
       href: Locar_for_remote.html
+    - text: "Tornando seus dados e códigos citáveis"
+      href: Armazenamento_permanente_Zenodo.html

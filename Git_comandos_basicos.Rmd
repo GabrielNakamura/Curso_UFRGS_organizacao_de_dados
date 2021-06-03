@@ -71,10 +71,21 @@ Para informações detalhadas de como usar esse recurso acesse essa [Referência
 
 ## Arquivos grandes - Git LFS
 
-O GitHub não foi projetado pensando em hospedar arquivos que não são binários, por exemplo, Figuras em extensões como .png, .tiff, .jpeg. Sua principal função sempre foi, e ainda é, hospedar códigos em arquivos simples de texto, tal como nossos scripts em R. Porém, em alguns momentos não tem como fugir, e alguns arquivos pesados (>25Gb), como imagens de satélite, ou de elevado processamento, precisam ser hospedadas no nosso repositório, como fazemos? Para resolver isso precisamos utilizar uma extensão do Git chamado Git LFS (Large File Storage). Essa extenção funciona como um pacote, ela permite que o Git faça coisas que não estão na sua programação básica. 
+O GitHub não foi projetado pensando em hospedar arquivos que não são binários, por exemplo, Figuras em extensões como .png, .tiff, .jpeg. Sua principal função sempre foi, e ainda é, hospedar códigos em arquivos simples de texto, tal como nossos scripts em R. Porém, em alguns momentos não tem como fugir, e alguns arquivos pesados (>25Gb), como imagens de satélite, ou de elevado processamento, precisam ser hospedadas no nosso repositório, como fazemos? Para resolver isso precisamos utilizar uma extensão do Git chamado [Git LFS (Large File Storage)](https://qifengzhou.github.io/2018/04/29/Upload%20files%20bigger%20than%2025%20MB%20to%20Github/). Essa extenção funciona como um pacote, ela permite que o Git faça coisas que não estão na sua programação básica.
 
-[Referência](https://qifengzhou.github.io/2018/04/29/Upload%20files%20bigger%20than%2025%20MB%20to%20Github/)
+Para utiizar o Git LFS precisamos primeiro instalar esta extensão em nosso computador, sua instalação pode ser feita direta no [site do Git](https://git-lfs.github.com/), primeiro fazendo o download da versão adequada ao sistema operacional de sua máquina e depois seguindo os passos necessários para instalação. 
+
+Após instalado abra a linha de comando a partir da pasta do diretório que deseja que os arquivos grandes sejam upados para o GitHub e digite:
+
+```{r echo=TRUE, eval=FALSE}
+git lfs track "*.extensao"
+```
+
+Ao fazer isso estamos dizendo para o git permitir fazer o push de todos os arquivos que apresentam aquela extensao desejada, mesmo que eles sejam maiores que o tamanho máximo permitido.
+
+
 
 **Em construção**
+
 ![](https://media.giphy.com/media/BpGWitbFZflfSUYuZ9/giphy.gif)
 

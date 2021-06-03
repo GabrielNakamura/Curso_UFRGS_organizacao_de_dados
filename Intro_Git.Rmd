@@ -86,7 +86,7 @@ sudo yum install git
 
 Após a instalação do git devemos configurá-lo no nosso computador. Para configurar o Git, ou seja, para que o Git saiba quem está o usando, abra o RStudio e digite:
 
-```{r}
+```{r echo=TRUE, eval=FALSE}
 library(usethis)
 use_git_config(user.name = "SeuNomeDeUsuario", user.email = "seuMail@example.br")
 ```
@@ -109,7 +109,7 @@ Isso abrirá uma guia no seu navegador para que você gere um token, tal como mo
 
 Após gerado, guarde esse token com carinho, pois ele vai ser sua nova senha de entrada para o GitHub via RStudio, quando for requerido. Para registrar esse token gerado faça o seguinte:
 
-```{r}
+```{r echo=TRUE, eval=FALSE}
 library(gitcreds)
 gitcreds_set()
 ```

@@ -1,0 +1,37 @@
+---
+title: "Tornando o seu código citável"
+author: "Gabriel Nakamura"
+date: "6/3/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Ufa! Aquela mensagem bela que todos nós gostamos de receber: "Parabéns, seu artigo foi aceita para publicação na revista .....". Trabalho terminado, certo? É hora de encaixotar tudo e partir para outra empreitada científica? Não! Antes disso precisamos registar nosso código de modo que ele possa ser rastreado facilmente, citado e, acima de tudo, reproduzível de modo que quem o faça chegue nas mesmas conclusões que chegamos em nosso artigo. Porém, seu código está no GitHub, e volta e meia ele é modificado, ou por algum motivo técnico ou instabilidade de servidor o GitHub fica fora do ar. A questão é, como fazer com que seu código possa ser registrado e guardado com segurança? Para isso utilizamos algum repositório para armazenamento permanente. 
+
+Aqui irei mostrar como isso pode ser feita a partir da utilização do [Zenodo](https://zenodo.org/), mas outros repositórios permanentes de dados e códigos estão disponíveis por aí, por exemplo Dryad.
+
+Para armazenar seu código no Zenodo, a primeira coisa a ser feita é criar uma conta nele. A minha sugestão é que esta conta seja criada através da sua conta do GitHub, isso faz com que o Zenodo já tenha conexão com seus repositórios, incluindo aquele que pretende fazer o armazenamento permanente.
+
+Para ver os seus repositórios através do Zenodo basta acessar a aba GitHub via zenodo, como mostrado na seta da Figura abaixo
+
+![Acessando os repositórios do GitHub via Zenodo](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Zenodo_gitHub.png)
+Ao acessar a aba GitHub via Zenodo, todos os seus repositórios públicos irão aparecer, portanto, é importante que o repositório que você pretende fazer o armazenamento permanente dos dados seja público. 
+
+O primeiro passo é habilitar o acesso do Zenodo ao repositório de interesse. Como mostrado na própria página do Zenodo. Em seguida você deve fazer um **release** do seu repositório, mas o que é isso? Como o próprio nome diz, o release é um lançamento do repositório, é como se fosse uma fotografia do repositório inteiro em um dado momento. Fazemos isso, por exemplo, quando temos uma versão estável de um pacote estatístico, ou quando submetemos o nosso manuscrito para uma revista ou repositórios de preprints. O release é importante pois é a partir dele que será criado o DOI (Digital Object Identifier), que é como um RG do seu repositório, um número único pelo qual ele pode ser identificado na internet.
+
+Para criar um release clique no botão destacado na Figura seguinte. Ele te redicionará para a página do GitHub.
+
+![Criando um release](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Release_Zenodo_git.png)
+
+Ná página do GitHub dê um nome para esse seu novo release. Geralmente os nomes seguem um formato com três digitos separados por pontos, chamamos esse sistema de [versionamento semântico](https://semver.org/lang/pt-BR/) e utilizamos ele para controlar as versões de lançamento de acordo com mudanças que podemos ir fazendo no nosso código. Isso é mais comum de ser utilizado para controlar versões de pacotes, mas não impede que utilize no seu repositório.
+
+Para lançar seu release basta atribuir um nome de versão para seu repositório e pronto! Basta clicar no botão para publicar o release e ele está pronto.
+
+![Seu código lançado](/Users/gabrielnakamura/OneDrive/Aulas/Disciplina_ppgEco/Curso_UFRGS_organizacao_de_dados/Release_Description_github.png)
+
+Após isso, volte para a página do Zenodo, lá você vai encontrar algumas coisas novas ao clicar no repositório que fez o release, a mais importante dela será o DOI. Esse número, a partir de agora, identificará seu repositório na internet. Você pode, por exemplo, adicionar esse número no seu README, de modo que quem acesse o seu repositório através do GitHub saiba que você tem uma versão de armazenamento permanente que pode ser acessada através desse DOI.
+
+

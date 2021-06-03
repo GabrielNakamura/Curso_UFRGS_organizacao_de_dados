@@ -13,42 +13,51 @@ Durante o curso vimos que as funções básicas necessárias para um controle de
 
 # Do clica-clica para o digita-digita
 
-Para iniciar um repositório local observado pelo git abra o terminal a partir da pasta que você deseja que o git observe, usando a linha de comando. No terminal digite:
+*Como podemos fazer o caminho inverso para inicialização de um repositório, ou seja, a partir de um diretório local, já organizado, como podemos fazer com que ele seja observado pelo git e esteja conectado pelo com o GitHub (local -> remoto ao invés de inciar remoto -> local)? *
+
+Para fazer com que um repositório local seja observado pelo git abra o terminal a partir da pasta que você deseja que o git observe, usando a linha de comando. No terminal digite:
 
 ```{r echo=TRUE, eval=FALSE}
 git init
 ```
 
-Para conectar um repositório local ao remoto
+Em seguida conecte o diretório local ao remoto. A prieira linha informa o caminho https do seu repositório remoto, a segunda faz um push do seu diretório local (origin) para o remoto (master).
+
 ```{r echo=TRUE, eval=FALSE}
 git remote add origin https://github.com/yourUserName/yourRepoName.git
 git push -u origin master
 ```
 
+*Como clonamos um repositório remoto a partir da linha de comando?*
+Para clonar um repositório remoto no seu computador usando a linha de comando digite:
 
-Para clonar um repositório local
 ```{r echo=TRUE, eval=FALSE}
 git clone https://gitlab.com/gitlab-tests/sample-project.git
 ```
 
-Para preparar o arquivo para fazer um commit
+*Como fazemos o commit de um arquivo através da linha de comando?*
 
 ```{r echo=TRUE, eval=FALSE}
 git add <file-name OR folder-name>
-git commit -m "COMMENT TO DESCRIBE THE INTENTION OF THE COMMIT"
+git commit -m "Um comentário para descrever a modificação neste arquivo"
+```
+A primeira linha adiciona o arquivo que você deseja fazer o commit, a segunda faz o commit com uma mensagem entre aspas.
+
+*Quando estamos trabalhando em conjunto num mesmo repositório, mas em branches distintos, como fazemos para copiar um arquivo de um branch e jogar para o outro branch?*
+
+Suponhamos que você esteja no branch master (que vai ser main em alguns casos), e deseja copiar um arquivo que só tem no branch do seu colaborador (apenas para exemplificar vamos chamar o branch de outro_branch). Primeiro precisamos copiar o arquivo desejado do branch do colaborador 
+
+```{r echo=TRUE, eval=FALSE}
+git checkout outro_branch Nome_do_aruivo.extencao
 ```
 
+O help do git é bastante informativo, portanto vale a pena olhar para ele para aprender as funções básicas. Para isso digite
 
-Para copiar arquivos de um branch para outro branch dentro de um mesmo repositório. No branch em que o arquivo deve ser copiado digite:
-
-```{r}
-git checkout <nome do repo que contem arquivo a ser copiado> <Nome do arquivo com extensao>
+```{r echo=TRUE, eval=FALSE}
+git help
 ```
 
-O arquivo vai aparecer na área de stage do seu RStudio, na aba do git
-
-[Referência](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
-
+Outra fonte de informação muito boa e completa é o livro da [Jenny Bryan](https://happygitwithr.com/)
 
 
 
