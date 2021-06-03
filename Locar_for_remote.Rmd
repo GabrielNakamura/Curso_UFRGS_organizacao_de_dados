@@ -12,7 +12,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Do clica-clica para o digita-digita
 
-Para iniciar um repositório local observado pelo git abra o terminal a partir da pasta que quer que o git observe usando a linha de comando. No terminal digite
+Para iniciar um repositório local observado pelo git abra o terminal a partir da pasta que você deseja que o git observe, usando a linha de comando. No terminal digite:
+
 ```{r echo=TRUE, eval=FALSE}
 git init
 ```
@@ -35,6 +36,15 @@ Para preparar o arquivo para fazer um commit
 git add <file-name OR folder-name>
 git commit -m "COMMENT TO DESCRIBE THE INTENTION OF THE COMMIT"
 ```
+
+
+Para copiar arquivos de um branch para outro branch dentro de um mesmo repositório. No branch em que o arquivo deve ser copiado digite:
+
+```{r}
+git checkout <nome do repo que contem arquivo a ser copiado> <Nome do arquivo com extensao>
+```
+
+O arquivo vai aparecer na área de stage do seu RStudio, na aba do git
 
 [Referência](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
 
