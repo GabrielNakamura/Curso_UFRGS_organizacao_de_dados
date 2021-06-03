@@ -9,6 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+Durante o curso vimos que as funções básicas necessárias para um controle de versões efetivas para garantir um projeto científico reprodutível, podem ser realizadas através do RStudio, quando conectado com um repositório local observado pelo git e com o GitHub. Porém, vimos também que algumas coisas não são possíveis de se fazer apenas através dos botões que o RStudio nos apresenta, mas que são possíveis a partir da linha de comando, utilizando algumas poucas funções. Nesta seção apresentarei algumas funções básicas que são úteis conhecermos para que possamos realizar ações que não são possíveis serem realizadas através do RStudio.
 
 # Do clica-clica para o digita-digita
 
